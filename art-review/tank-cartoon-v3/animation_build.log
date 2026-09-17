@@ -1,0 +1,23 @@
+00:00.239  blend            | Read blend: "/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/Cartoon_Asset_Source.blend"
+/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/build_cartoon_animation.py:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*col,1);m.use_nodes=True
+/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/build_cartoon_animation.py:94: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  SC.world=bpy.data.worlds.new(name+' | world');SC.world.use_nodes=True
+ANIMATED tank_01_azure_scout 142
+ANIMATED tank_02_mint_cruiser 142
+ANIMATED tank_03_vermilion_heavy 142
+ANIMATED tank_04_saffron_sprinter 142
+ANIMATED tank_05_violet_marksman 142
+ANIMATED tank_06_ivory_duelist 193
+ANIMATED tank_07_tangerine_siege 142
+ANIMATED tank_08_charcoal_command 142
+00:07.797  render           | Saved: '/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/previews/01_moving.png'
+00:09.051  render           | Saved: '/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/previews/02_firing.png'
+00:10.314  render           | Saved: '/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/previews/03_explosion.png'
+00:11.579  render           | Saved: '/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/previews/04_wreck.png'
+00:14.481  render           | Saved: '/Users/jaili/projects/godot/tanks/art-review/tank-cartoon-v3/previews/05_all_tanks.png'
+Info: Saved as "Pocket_Armor_Cartoon_Review.blend"
+ANIMATION_BUILD_COMPLETE
+Blender 5.1.1 (hash b70da489d7f4 built 2026-04-14 01:46:23)
+
+Blender quit

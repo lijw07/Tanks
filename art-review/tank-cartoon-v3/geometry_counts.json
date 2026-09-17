@@ -1,0 +1,42 @@
+[
+  {
+    "tank": "01_azure_scout",
+    "static_triangles": 548,
+    "objects": 36
+  },
+  {
+    "tank": "02_mint_cruiser",
+    "static_triangles": 540,
+    "objects": 36
+  },
+  {
+    "tank": "03_vermilion_heavy",
+    "static_triangles": 548,
+    "objects": 36
+  },
+  {
+    "tank": "04_saffron_sprinter",
+    "static_triangles": 548,
+    "objects": 36
+  },
+  {
+    "tank": "05_violet_marksman",
+    "static_triangles": 540,
+    "objects": 36
+  },
+  {
+    "tank": "06_ivory_duelist",
+    "static_triangles": 608,
+    "objects": 41
+  },
+  {
+    "tank": "07_tangerine_siege",
+    "static_triangles": 548,
+    "objects": 36
+  },
+  {
+    "tank": "08_charcoal_command",
+    "static_triangles": 548,
+    "objects": 36
+  }
+]

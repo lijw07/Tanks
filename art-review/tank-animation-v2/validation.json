@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "tested_from_saved_blend": true,
+  "tanks": [
+    {
+      "tank": "tank_01_azure_scout",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_02_mint_cruiser",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_03_vermilion_heavy",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_04_saffron_sprinter",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_05_violet_marksman",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_06_ivory_duelist",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_07_tangerine_siege",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    },
+    {
+      "tank": "tank_08_charcoal_command",
+      "result": "PASS",
+      "checks": [
+        "Travel",
+        "Tread circulation",
+        "Wheel rotation",
+        "Pivot turn",
+        "Turret aiming",
+        "Recoil",
+        "Muzzle flash",
+        "Death replacement",
+        "Persistent wreck",
+        "Respawn reset"
+      ]
+    }
+  ],
+  "godot_project_unchanged": true,
+  "excluded_from_godot_import": true,
+  "limitations": [
+    "Visual effects are authored Blender mesh animation",
+    "Godot import and gameplay not tested because approval is pending"
+  ],
+  "live_blender_review": {
+    "file_opened": true,
+    "playback_observed": true,
+    "direct_scrub_explosion_frame": 247,
+    "timeline_expanded_and_saved": true
+  },
+  "source_blend_sha256": "b9541a3065d04e055af75e6b31a3613e101fc5517301b42c999d8061cc17abba",
+  "video": {
+    "file": "tank_animation_demo.mp4",
+    "duration_seconds": 14.0,
+    "bytes": 1014429,
+    "container_check": "PASS"
+  }
+}

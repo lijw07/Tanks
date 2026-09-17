@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "scene_count": 6,
+  "preview_count": 12,
+  "source_unchanged": true,
+  "external_texture_dependencies": [],
+  "godot_import_excluded": true,
+  "scope": "Saved Blender structure and preview files; not gameplay validation",
+  "maps": [
+    {
+      "scene": "01 | CROSSFIRE COURT",
+      "objects": 184,
+      "collection_instances": 172,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/01_crossfire_court.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "105b94b77c460f57344951a04261f706f2bd2e14f9dce846409cc9cdd4667be4"
+        },
+        {
+          "file": "previews/01_crossfire_court_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "9c895ec504e926ec71273cae1fbd478764e621bafb5a96bbacfd8c8a5fbd28d4"
+        }
+      ]
+    },
+    {
+      "scene": "02 | COURTYARD KEEP",
+      "objects": 106,
+      "collection_instances": 71,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/02_courtyard_keep.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "dd1c8dd106e0511f3693436526cabce3fe76298b15e16090bc09fd268c00f6bf"
+        },
+        {
+          "file": "previews/02_courtyard_keep_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "73ec63c63cf2f48d56d8df213d401e7c549734754e003c5a7a3d617c0b0721ff"
+        }
+      ]
+    },
+    {
+      "scene": "03 | CANAL CROSSINGS",
+      "objects": 237,
+      "collection_instances": 168,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/03_canal_crossings.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "f4264f3e0458cee20a4080e60aa3e2eac63c196f1bebbf953e2557ff652bd183"
+        },
+        {
+          "file": "previews/03_canal_crossings_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "a4465ae2919869a48ca3e4da885899a6644d7b91de8cba16c9b4b3dccbfca16a"
+        }
+      ]
+    },
+    {
+      "scene": "04 | SWITCHBACK WORKS",
+      "objects": 190,
+      "collection_instances": 178,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/04_switchback_works.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "dd0d86745b8cb649f386fcac755b6f1fdc79d596155e7fbd95818ef3fcee55ae"
+        },
+        {
+          "file": "previews/04_switchback_works_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "e858fd549c286aa2e531276c96bc81ddc01d94430e1d8dab5d1ddbba2ab20a6f"
+        }
+      ]
+    },
+    {
+      "scene": "05 | FREIGHT EXCHANGE",
+      "objects": 213,
+      "collection_instances": 59,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/05_freight_exchange.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "4e1cc757904bd49a88ba65bd3c37db89236006971abbdad0187972379338c83a"
+        },
+        {
+          "file": "previews/05_freight_exchange_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "9dfebd1e7ec0cc7e0d64921f1c3b59aad7878730a072736c7f86f8750f1eef6e"
+        }
+      ]
+    },
+    {
+      "scene": "06 | CRATER CIRCUIT",
+      "objects": 109,
+      "collection_instances": 64,
+      "tanks": 4,
+      "cameras": 2,
+      "previews": [
+        {
+          "file": "previews/06_crater_circuit.png",
+          "dimensions": [
+            1600,
+            1250
+          ],
+          "sha256": "23a469345f5e6b3e35e395a596e007889bf48c078e152880be882ce70e6420cd"
+        },
+        {
+          "file": "previews/06_crater_circuit_overhead.png",
+          "dimensions": [
+            1500,
+            1150
+          ],
+          "sha256": "c866c1b107802bebd09cdbd06a8eb4be176da037b634fb5b50f77fc75abf9fb6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Pocket Armor / six map studies",
+  "status": "Outlined review concepts; no Godot integration or gameplay validation",
+  "source": "/Users/jaili/projects/godot/tanks/art-review/tank-kit-v1/Pocket_Armor_Review.blend",
+  "source_sha256": "6c12ecd8355a3cc51306823754061c4822ec83a7e9c3a921241e0c52d2d2de01",
+  "request": "I want you to create me a series of scenes that show different ideas for maps.",
+  "asset_spec": {
+    "board_m": [
+      24,
+      18
+    ],
+    "units": "meters",
+    "assets": "Appended original tank-kit-v1 collections; new editable map geometry",
+    "textures": "Existing packed 256 x 256 beech; new materials are procedural PBR constants",
+    "license": "Existing project artwork plus newly authored local geometry; no external assets or paid providers",
+    "budget": "Review scenes use collection instancing; no runtime performance budget asserted"
+  },
+  "maps": [
+    {
+      "number": 1,
+      "name": "Crossfire Court",
+      "description": "Three lanes / offset cover / quick flanks",
+      "scene": "01 | CROSSFIRE COURT",
+      "slug": "01_crossfire_court"
+    },
+    {
+      "number": 2,
+      "name": "Courtyard Keep",
+      "description": "Four gates / contested center / outer rotation",
+      "scene": "02 | COURTYARD KEEP",
+      "slug": "02_courtyard_keep"
+    },
+    {
+      "number": 3,
+      "name": "Canal Crossings",
+      "description": "Three bridges / exposed crossings / split banks",
+      "scene": "03 | CANAL CROSSINGS",
+      "slug": "03_canal_crossings"
+    },
+    {
+      "number": 4,
+      "name": "Switchback Works",
+      "description": "Alternating routes / blind corners / ambush pockets",
+      "scene": "04 | SWITCHBACK WORKS",
+      "slug": "04_switchback_works"
+    },
+    {
+      "number": 5,
+      "name": "Freight Exchange",
+      "description": "Staggered cargo / bank shots / wide service lanes",
+      "scene": "05 | FREIGHT EXCHANGE",
+      "slug": "05_freight_exchange"
+    },
+    {
+      "number": 6,
+      "name": "Crater Circuit",
+      "description": "Central hazard / ring route / broken cover",
+      "scene": "06 | CRATER CIRCUIT",
+      "slug": "06_crater_circuit"
+    }
+  ],
+  "style_revision": {
+    "request": "Add outlines and reduce the bloom-like softness",
+    "method": "Blender Freestyle charcoal object silhouettes, 1.4 px at final resolution; reduced world/fill/rim; higher roughness and lower specular; Medium High Contrast AgX",
+    "bloom": "No glare/bloom effect was present in the original scenes; softness came from lighting/materials",
+    "source_map_sha256": "6aacdf47dc534bbaf2b0267049904e9f27991494f88606dfc1e7fdedb3008e72"
+  }
+}

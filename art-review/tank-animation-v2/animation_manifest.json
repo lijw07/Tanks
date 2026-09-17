@@ -1,0 +1,146 @@
+{
+  "status": "BLENDER REVIEW ONLY - waiting for visual approval",
+  "source_sha256": "6c12ecd8355a3cc51306823754061c4822ec83a7e9c3a921241e0c52d2d2de01",
+  "frames": 336,
+  "fps": 24,
+  "duration_seconds": 14.0,
+  "tanks": [
+    {
+      "tank": "tank_01_azure_scout",
+      "scene": "02 | AZURE SCOUT",
+      "collection": "ANIMATED | tank_01_azure_scout",
+      "animated_objects": 205,
+      "curves": 1179,
+      "tread_links": 50,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_02_mint_cruiser",
+      "scene": "03 | MINT CRUISER",
+      "collection": "ANIMATED | tank_02_mint_cruiser",
+      "animated_objects": 213,
+      "curves": 1227,
+      "tread_links": 58,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_03_vermilion_heavy",
+      "scene": "04 | VERMILION HEAVY",
+      "collection": "ANIMATED | tank_03_vermilion_heavy",
+      "animated_objects": 221,
+      "curves": 1275,
+      "tread_links": 66,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_04_saffron_sprinter",
+      "scene": "05 | SAFFRON SPRINTER",
+      "collection": "ANIMATED | tank_04_saffron_sprinter",
+      "animated_objects": 199,
+      "curves": 1143,
+      "tread_links": 44,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_05_violet_marksman",
+      "scene": "06 | VIOLET MARKSMAN",
+      "collection": "ANIMATED | tank_05_violet_marksman",
+      "animated_objects": 215,
+      "curves": 1239,
+      "tread_links": 60,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_06_ivory_duelist",
+      "scene": "07 | IVORY DUELIST",
+      "collection": "ANIMATED | tank_06_ivory_duelist",
+      "animated_objects": 260,
+      "curves": 1464,
+      "tread_links": 54,
+      "barrels": 2,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_07_tangerine_siege",
+      "scene": "08 | TANGERINE SIEGE",
+      "collection": "ANIMATED | tank_07_tangerine_siege",
+      "animated_objects": 223,
+      "curves": 1287,
+      "tread_links": 68,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    },
+    {
+      "tank": "tank_08_charcoal_command",
+      "scene": "09 | CHARCOAL COMMAND",
+      "collection": "ANIMATED | tank_08_charcoal_command",
+      "animated_objects": 215,
+      "curves": 1239,
+      "tread_links": 60,
+      "barrels": 1,
+      "frame_range": [
+        1,
+        336
+      ],
+      "fps": 24
+    }
+  ],
+  "features": [
+    "Continuous tread circulation",
+    "Axle wheel rotation",
+    "Travel and differential pivot turn",
+    "Suspension motion",
+    "Independent turret aiming",
+    "Barrel recoil",
+    "Muzzle flash and smoke",
+    "Traveling shells and streaks",
+    "Target impacts and sparks",
+    "Track dust",
+    "Death flash and fireball",
+    "Shock ring",
+    "Flying armor debris",
+    "Detached turret",
+    "Charred hull wreck",
+    "Rising smoke and embers",
+    "Respawn loop"
+  ],
+  "limits": [
+    "Choreographed animation previews, not playable combat",
+    "Blender mesh effects; Godot particle implementation deferred",
+    "No sound effects",
+    "No Godot files changed"
+  ]
+}
