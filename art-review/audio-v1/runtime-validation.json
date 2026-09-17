@@ -1,7 +1,0 @@
-{
-  "audio_driver": "CoreAudio",
-  "checks": 75,
-  "cue_count": 56,
-  "display": "macOS",
-  "failures": []
-}
