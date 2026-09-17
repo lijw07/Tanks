@@ -1,16 +1,61 @@
-# Godot 4+ specific ignores
+# Godot editor cache and generated imports (keep *.import and *.uid files).
 .godot/
 .nomedia
-
-# Godot-specific ignores
 .import/
 export.cfg
 export_credentials.cfg
 
-# Imported translations (automatically generated from CSV files)
+# Imported translations generated from source CSV files.
 *.translation
 
-# Mono-specific ignores
+# Exported game builds. Source asset exports, such as GLB files, stay tracked.
+/build/
+/builds/
+/dist/
+
+# Godot C# / .NET build caches, if C# is introduced later.
 .mono/
-data_*/
+**/bin/
+**/obj/
 mono_crash.*.json
+
+# Generated art-review output; keep editable .blend sources, GLBs, textures,
+# authoring scripts, manifests, and validation reports.
+/art-review/**/previews/
+/art-review/**/index.html
+*.log
+*.blend[0-9]*
+*.blend@
+/art-review/**/Previous_Review_Recovery.blend
+
+# Python authoring caches and local environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Local credentials and signing files. Example environment files are shareable.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Machine-specific editor state and operating-system metadata.
+.idea/
+.vs/
+*.code-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

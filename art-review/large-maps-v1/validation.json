@@ -1,0 +1,16 @@
+{
+	"checks": 567,
+	"dimensions_m": [
+		48,
+		36
+	],
+	"failures": [],
+	"maps": 6,
+	"passed": true,
+	"rendered": false,
+	"supported_tanks": [
+		4,
+		6,
+		8
+	]
+}

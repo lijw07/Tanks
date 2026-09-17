@@ -1,0 +1,419 @@
+{
+	"checks": 82,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"passed": true,
+	"rendered": true,
+	"results": [
+		{
+			"check": "49 independent TSCN assets",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_01_azure_scout saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_01_azure_scout_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_01_azure_scout_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_02_mint_cruiser saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_02_mint_cruiser_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_02_mint_cruiser_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_03_vermilion_heavy saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_03_vermilion_heavy_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_03_vermilion_heavy_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_04_saffron_sprinter saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_04_saffron_sprinter_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_04_saffron_sprinter_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_05_violet_marksman saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_05_violet_marksman_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_05_violet_marksman_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_06_ivory_duelist saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_06_ivory_duelist_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_06_ivory_duelist_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_07_tangerine_siege saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_07_tangerine_siege_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_07_tangerine_siege_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_08_charcoal_command saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_08_charcoal_command_hull saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_08_charcoal_command_turret saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_beech_1m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_beech_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_beech_4m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_low_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "pillar_beech saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_corner_L saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_junction_T saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_round_pillar saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_diagonal saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_terracotta_1m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_terracotta_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_steel_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "floor_maple_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "floor_sand_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "pit_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "border_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "border_corner saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "crate_1m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "barrels_pair saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "barricade_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "rubble_cluster saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mine_disc saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "shell_standard saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "shell_rocket saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "spawn_marker_2m saved collision",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Collision points match source meshes",
+			"detail": "286 / 286 matched; []",
+			"passed": true
+		},
+		{
+			"check": "tank_01_azure_scout animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_02_mint_cruiser animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_03_vermilion_heavy animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_04_saffron_sprinter animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_05_violet_marksman animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_06_ivory_duelist animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_07_tangerine_siege animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "tank_08_charcoal_command animated parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "L wall opening stays open",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "L wall solid arm stops rays",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Diagonal wedge empty half stays open",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Diagonal wedge solid half stops rays",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Pit passes shells above opening",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Pit blocks tank movement",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Outer border stops shells heading (1.0, 0.0, 0.0)",
+			"detail": "(24.025, 1.02, 0.0)",
+			"passed": true
+		},
+		{
+			"check": "Outer border stops shells heading (-1.0, 0.0, 0.0)",
+			"detail": "(-24.025, 1.02, 0.0)",
+			"passed": true
+		},
+		{
+			"check": "Outer border stops shells heading (0.0, 0.0, 1.0)",
+			"detail": "(0.0, 1.02, 18.025)",
+			"passed": true
+		},
+		{
+			"check": "Outer border stops shells heading (0.0, 0.0, -1.0)",
+			"detail": "(0.0, 1.02, -18.025)",
+			"passed": true
+		},
+		{
+			"check": "Tank moves with input",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Tank stops against mesh wall",
+			"detail": "(100.0, 0.0, 101.7491)",
+			"passed": true
+		},
+		{
+			"check": "Wheel axle direction preserved",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Treads travel with movement",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Fire starts shell and muzzle effects",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Barrel recoils",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Shell kills target and creates wreck",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Recoil returns to rest",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Wall ricochet reverses shell direction",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Mine has arming delay",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Armed mine damages nearby tank",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Player destruction starts spectating",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "Reset restores eight tanks and clears effects",
+			"detail": "",
+			"passed": true
+		}
+	]
+}

@@ -1,0 +1,349 @@
+{
+	"all_assets_have_tscn": true,
+	"assets": [
+		{
+			"collision_shapes": 12,
+			"id": "tank_01_azure_scout",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_01_azure_scout.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_01_azure_scout_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_01_azure_scout_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_01_azure_scout_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_01_azure_scout_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_02_mint_cruiser",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_02_mint_cruiser.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_02_mint_cruiser_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_02_mint_cruiser_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_02_mint_cruiser_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_02_mint_cruiser_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_03_vermilion_heavy",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_03_vermilion_heavy.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_03_vermilion_heavy_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_03_vermilion_heavy_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_03_vermilion_heavy_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_03_vermilion_heavy_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_04_saffron_sprinter",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_04_saffron_sprinter.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_04_saffron_sprinter_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_04_saffron_sprinter_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_04_saffron_sprinter_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_04_saffron_sprinter_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_05_violet_marksman",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_05_violet_marksman.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_05_violet_marksman_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_05_violet_marksman_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_05_violet_marksman_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_05_violet_marksman_turret.tscn"
+		},
+		{
+			"collision_shapes": 15,
+			"id": "tank_06_ivory_duelist",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 50,
+			"scene": "res://scenes/tanks/tank_06_ivory_duelist.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_06_ivory_duelist_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_06_ivory_duelist_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_06_ivory_duelist_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_06_ivory_duelist_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_07_tangerine_siege",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_07_tangerine_siege.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_07_tangerine_siege_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_07_tangerine_siege_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_07_tangerine_siege_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_07_tangerine_siege_turret.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_08_charcoal_command",
+			"mode": "convex compound + articulated hitboxes",
+			"model_meshes": 47,
+			"scene": "res://scenes/tanks/tank_08_charcoal_command.tscn"
+		},
+		{
+			"collision_shapes": 12,
+			"id": "tank_08_charcoal_command_hull",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 12,
+			"scene": "res://scenes/wrecks/tank_08_charcoal_command_hull.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "tank_08_charcoal_command_turret",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/wrecks/tank_08_charcoal_command_turret.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_beech_1m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_beech_1m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_beech_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_beech_2m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_beech_4m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_beech_4m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_low_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_low_2m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "pillar_beech",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/pillar_beech.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "wall_corner_L",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/arena/wall_corner_L.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "wall_junction_T",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/arena/wall_junction_T.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_round_pillar",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_round_pillar.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_diagonal",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_diagonal.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "wall_terracotta_1m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/wall_terracotta_1m.tscn"
+		},
+		{
+			"collision_shapes": 4,
+			"id": "wall_terracotta_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 4,
+			"scene": "res://scenes/arena/wall_terracotta_2m.tscn"
+		},
+		{
+			"collision_shapes": 3,
+			"id": "wall_steel_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 3,
+			"scene": "res://scenes/arena/wall_steel_2m.tscn"
+		},
+		{
+			"collision_shapes": 4,
+			"id": "floor_maple_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 4,
+			"scene": "res://scenes/arena/floor_maple_2m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "floor_sand_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/floor_sand_2m.tscn"
+		},
+		{
+			"collision_shapes": 6,
+			"id": "pit_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 5,
+			"scene": "res://scenes/arena/pit_2m.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "border_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/arena/border_2m.tscn"
+		},
+		{
+			"collision_shapes": 1,
+			"id": "border_corner",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 1,
+			"scene": "res://scenes/arena/border_corner.tscn"
+		},
+		{
+			"collision_shapes": 6,
+			"id": "crate_1m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 6,
+			"scene": "res://scenes/props/crate_1m.tscn"
+		},
+		{
+			"collision_shapes": 8,
+			"id": "barrels_pair",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 8,
+			"scene": "res://scenes/props/barrels_pair.tscn"
+		},
+		{
+			"collision_shapes": 7,
+			"id": "barricade_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 7,
+			"scene": "res://scenes/props/barricade_2m.tscn"
+		},
+		{
+			"collision_shapes": 5,
+			"id": "rubble_cluster",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 5,
+			"scene": "res://scenes/props/rubble_cluster.tscn"
+		},
+		{
+			"collision_shapes": 3,
+			"id": "mine_disc",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 3,
+			"scene": "res://scenes/props/mine_disc.tscn"
+		},
+		{
+			"collision_shapes": 2,
+			"id": "shell_standard",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 2,
+			"scene": "res://scenes/props/shell_standard.tscn"
+		},
+		{
+			"collision_shapes": 4,
+			"id": "shell_rocket",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 4,
+			"scene": "res://scenes/props/shell_rocket.tscn"
+		},
+		{
+			"collision_shapes": 8,
+			"id": "spawn_marker_2m",
+			"mode": "mesh triangle surfaces",
+			"model_meshes": 8,
+			"scene": "res://scenes/props/spawn_marker_2m.tscn"
+		}
+	],
+	"scene_count": 49
+}

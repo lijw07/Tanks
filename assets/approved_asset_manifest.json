@@ -1,0 +1,310 @@
+{
+  "name": "Pocket Armor approved cartoon kit",
+  "version": "3",
+  "authorization": "User approved the cartoon revision and requested Godot integration.",
+  "provenance": "Original geometry created locally in Blender for this project; no downloaded provider assets or extracted Nintendo assets.",
+  "license_note": "User-commissioned original project assets; no third-party asset license applies.",
+  "source_files": {
+    "Pocket_Armor_Cartoon_Review.blend": "fe0c885addcfbc39c5b0f75667ab11155db95c7fdb7557db5fa03851b14b9915",
+    "Cartoon_Asset_Source.blend": "f1656c855f9b94a575119313b89d68e14b352c3caa5a0d99be138054a2c67775"
+  },
+  "assets": [
+    {
+      "id": "tank_01_azure_scout",
+      "path": "assets/models/tanks/tank_01_azure_scout.glb",
+      "sha256": "cb16739313adb72661c66b057ef802c45d144a5297dcc5e2d4715e0acff20e9a",
+      "bytes": 81348
+    },
+    {
+      "id": "tank_01_azure_scout_hull",
+      "path": "assets/models/wrecks/tank_01_azure_scout_hull.glb",
+      "sha256": "ad6f307984d8f08be0967d6cf1db6b923895a5f84e95821f8e2697ba9b747642",
+      "bytes": 23928
+    },
+    {
+      "id": "tank_01_azure_scout_turret",
+      "path": "assets/models/wrecks/tank_01_azure_scout_turret.glb",
+      "sha256": "bf1e00042bd5202f74fc88ea8e777d851dbb6da02e356a6107d3cf1bb287c4a6",
+      "bytes": 4760
+    },
+    {
+      "id": "tank_02_mint_cruiser",
+      "path": "assets/models/tanks/tank_02_mint_cruiser.glb",
+      "sha256": "2b4f2c225bcf20ebfca1c3fedaf40cad9a6bb4c7f519275bf958f6b93c157f96",
+      "bytes": 81260
+    },
+    {
+      "id": "tank_02_mint_cruiser_hull",
+      "path": "assets/models/wrecks/tank_02_mint_cruiser_hull.glb",
+      "sha256": "35efdc7e315b88363eb97a32bf243943a434c4d2ec9938afcad89de08a128116",
+      "bytes": 23932
+    },
+    {
+      "id": "tank_02_mint_cruiser_turret",
+      "path": "assets/models/wrecks/tank_02_mint_cruiser_turret.glb",
+      "sha256": "2476142db1d639ff0ea0e2e371ab8ac5f9a355b775e1391953a1f7b2b8016081",
+      "bytes": 4424
+    },
+    {
+      "id": "tank_03_vermilion_heavy",
+      "path": "assets/models/tanks/tank_03_vermilion_heavy.glb",
+      "sha256": "84abc95e108fadba62dbb2c6c8e15d12c1783df30aa11abfa1e7cdc6db5ee672",
+      "bytes": 81384
+    },
+    {
+      "id": "tank_03_vermilion_heavy_hull",
+      "path": "assets/models/wrecks/tank_03_vermilion_heavy_hull.glb",
+      "sha256": "c32beeed83be87a691b9137cc7ab6ccf6bdf9119405e62205c8cd5908b746fbf",
+      "bytes": 24000
+    },
+    {
+      "id": "tank_03_vermilion_heavy_turret",
+      "path": "assets/models/wrecks/tank_03_vermilion_heavy_turret.glb",
+      "sha256": "4a1477ab5ba990d7e46ed0d4c4a59a3e8c50d517740605bfcdaea7409490d2fa",
+      "bytes": 4760
+    },
+    {
+      "id": "tank_04_saffron_sprinter",
+      "path": "assets/models/tanks/tank_04_saffron_sprinter.glb",
+      "sha256": "6bc0194fbccfc2a7e48ce067137db1a089d7c33c321617b25c2f0617da768112",
+      "bytes": 81628
+    },
+    {
+      "id": "tank_04_saffron_sprinter_hull",
+      "path": "assets/models/wrecks/tank_04_saffron_sprinter_hull.glb",
+      "sha256": "8cc11a6b83deda5c4cdd98cb096737c32312e7ec045f4e4144a0c42c06ab9a23",
+      "bytes": 24012
+    },
+    {
+      "id": "tank_04_saffron_sprinter_turret",
+      "path": "assets/models/wrecks/tank_04_saffron_sprinter_turret.glb",
+      "sha256": "59b2fae6d56ea5c8130f5e64c72741754a834ca2619fb829c9dfcce2b0f91dea",
+      "bytes": 4764
+    },
+    {
+      "id": "tank_05_violet_marksman",
+      "path": "assets/models/tanks/tank_05_violet_marksman.glb",
+      "sha256": "eff045caabda0f3793552afa11acc02e611f90a18b03c6655dd9081215bdfc22",
+      "bytes": 81424
+    },
+    {
+      "id": "tank_05_violet_marksman_hull",
+      "path": "assets/models/wrecks/tank_05_violet_marksman_hull.glb",
+      "sha256": "d6bec9c39fdd13f2fb432520b933a026d9a46df84dc50dd0b68a9d9ab881f1a3",
+      "bytes": 23984
+    },
+    {
+      "id": "tank_05_violet_marksman_turret",
+      "path": "assets/models/wrecks/tank_05_violet_marksman_turret.glb",
+      "sha256": "0c222d0c6d9e48eef619c9dba035bde3427b83951b17c5f6b097cbe4fcd906ff",
+      "bytes": 4428
+    },
+    {
+      "id": "tank_06_ivory_duelist",
+      "path": "assets/models/tanks/tank_06_ivory_duelist.glb",
+      "sha256": "e9dd7b7f5e986eebb1957f838041d406e60bf1a9e38e91c0a6ea0dc86f0c5432",
+      "bytes": 87412
+    },
+    {
+      "id": "tank_06_ivory_duelist_hull",
+      "path": "assets/models/wrecks/tank_06_ivory_duelist_hull.glb",
+      "sha256": "6a4b5bcaaeaa03b264c74e20e9e38e2a2bac08a92defdb88525f25669ec98984",
+      "bytes": 23988
+    },
+    {
+      "id": "tank_06_ivory_duelist_turret",
+      "path": "assets/models/wrecks/tank_06_ivory_duelist_turret.glb",
+      "sha256": "2ecb952cac8c30241579dbcff591f0a22b9cc3680ef8dbf7d4809f0967326520",
+      "bytes": 4760
+    },
+    {
+      "id": "tank_07_tangerine_siege",
+      "path": "assets/models/tanks/tank_07_tangerine_siege.glb",
+      "sha256": "c468c548da682e1016f3b9cbc7a76fb950f76323016c35d5184afa20f9d50822",
+      "bytes": 81352
+    },
+    {
+      "id": "tank_07_tangerine_siege_hull",
+      "path": "assets/models/wrecks/tank_07_tangerine_siege_hull.glb",
+      "sha256": "6b71a086116659f576af3f3db43fbc97a3106dedc65ee0746145cab08d9264d3",
+      "bytes": 23996
+    },
+    {
+      "id": "tank_07_tangerine_siege_turret",
+      "path": "assets/models/wrecks/tank_07_tangerine_siege_turret.glb",
+      "sha256": "6f02338d2da410604b935299747fbb2d962f26419ed0f9ff8356726ba01dd6ad",
+      "bytes": 4764
+    },
+    {
+      "id": "tank_08_charcoal_command",
+      "path": "assets/models/tanks/tank_08_charcoal_command.glb",
+      "sha256": "ae01891d2e6842ad85972f31ea058965b02dfd8651352e981b4d6ce26b2dce61",
+      "bytes": 81396
+    },
+    {
+      "id": "tank_08_charcoal_command_hull",
+      "path": "assets/models/wrecks/tank_08_charcoal_command_hull.glb",
+      "sha256": "025f44ba991dcd4ecdca080523cf09668469b597e00dfbdb7681002500e2ce23",
+      "bytes": 23992
+    },
+    {
+      "id": "tank_08_charcoal_command_turret",
+      "path": "assets/models/wrecks/tank_08_charcoal_command_turret.glb",
+      "sha256": "796956c613609a6a06219eaf6db678053a8e07d13942bf6b95f46907e03a4fc6",
+      "bytes": 4764
+    },
+    {
+      "id": "wall_beech_1m",
+      "path": "assets/models/arena/wall_beech_1m.glb",
+      "sha256": "61beac4f779bdd301a526d80326bfa9ee061f665cd260ea031ac62c77acc97db",
+      "bytes": 4744
+    },
+    {
+      "id": "wall_beech_2m",
+      "path": "assets/models/arena/wall_beech_2m.glb",
+      "sha256": "42419115e70745a4187fc95b0558a52d409fb6b5f5372d4a9be10528747c9534",
+      "bytes": 4744
+    },
+    {
+      "id": "wall_beech_4m",
+      "path": "assets/models/arena/wall_beech_4m.glb",
+      "sha256": "9756fe6e2805dec61d962e136d2bbf76dff42a845277a255c7c76f81c2bab0ce",
+      "bytes": 4744
+    },
+    {
+      "id": "wall_low_2m",
+      "path": "assets/models/arena/wall_low_2m.glb",
+      "sha256": "ac0ddb75944e075d0c3c1550c2eaaf4fa30a41a934ad282cd20efc8b146612b1",
+      "bytes": 4712
+    },
+    {
+      "id": "pillar_beech",
+      "path": "assets/models/arena/pillar_beech.glb",
+      "sha256": "83843b6d9a185d1aed10b848b83d6707d62bc722ce3501cf023f1a23e51e3a4e",
+      "bytes": 4744
+    },
+    {
+      "id": "wall_corner_L",
+      "path": "assets/models/arena/wall_corner_L.glb",
+      "sha256": "2de620d2d11f5ef314edabc3cfc7f8e6f010d1cbc7344d46319d7069f51ff107",
+      "bytes": 8492
+    },
+    {
+      "id": "wall_junction_T",
+      "path": "assets/models/arena/wall_junction_T.glb",
+      "sha256": "989826e5ecdd08adc5c12ceb3034f664ca619f3bcb5e2fcf5ff1be08a8e2a6a7",
+      "bytes": 8472
+    },
+    {
+      "id": "wall_round_pillar",
+      "path": "assets/models/arena/wall_round_pillar.glb",
+      "sha256": "c6309754369ebbc6b21fda31878b8ce326f6d0641ed61e825d78125e3f2ab9c7",
+      "bytes": 13308
+    },
+    {
+      "id": "wall_diagonal",
+      "path": "assets/models/arena/wall_diagonal.glb",
+      "sha256": "e932b2533f85e9b382c93c71350cefb0efcdc8d7c208d16d9920a526209bd601",
+      "bytes": 3164
+    },
+    {
+      "id": "wall_terracotta_1m",
+      "path": "assets/models/arena/wall_terracotta_1m.glb",
+      "sha256": "4b913de391c9e013f577015f3cf1588a5476a651a399a8e83e25dffc88ccf707",
+      "bytes": 4740
+    },
+    {
+      "id": "wall_terracotta_2m",
+      "path": "assets/models/arena/wall_terracotta_2m.glb",
+      "sha256": "9587091bad143f100acd12c3f9d453d1b164ce06faa526adc9a1a9a0631163ff",
+      "bytes": 16300
+    },
+    {
+      "id": "wall_steel_2m",
+      "path": "assets/models/arena/wall_steel_2m.glb",
+      "sha256": "8fffdbba9d76ac2a3f44df9d0debb724928ef782596b891f716a345aad1598b7",
+      "bytes": 12472
+    },
+    {
+      "id": "floor_maple_2m",
+      "path": "assets/models/arena/floor_maple_2m.glb",
+      "sha256": "4fd73ebefbf4d8528a64d5bdfa67f5073060732714ceecd743690ec38188a08f",
+      "bytes": 16636
+    },
+    {
+      "id": "floor_sand_2m",
+      "path": "assets/models/arena/floor_sand_2m.glb",
+      "sha256": "718e4194fd3223eb9f1f301311ac4d97d36be7d34053f115baf6094093a689ed",
+      "bytes": 4736
+    },
+    {
+      "id": "pit_2m",
+      "path": "assets/models/arena/pit_2m.glb",
+      "sha256": "c1101a4e83bac4591e8d5f2be191feb9ff2822339c6db1725d6d42217438f4e8",
+      "bytes": 20060
+    },
+    {
+      "id": "border_2m",
+      "path": "assets/models/arena/border_2m.glb",
+      "sha256": "ea8d54842f804fa8a35d9accb94038e214a69424583d94357cbde6bde4d78687",
+      "bytes": 8700
+    },
+    {
+      "id": "border_corner",
+      "path": "assets/models/arena/border_corner.glb",
+      "sha256": "163a83cc529ca3742961bd7c9fc2383bc19136db2bdf1663477feff1bc58d8d2",
+      "bytes": 4776
+    },
+    {
+      "id": "crate_1m",
+      "path": "assets/models/arena/crate_1m.glb",
+      "sha256": "613ba4a048273d84874880f6efedaff63bf5f7f8bf421716429d96d73b9bfb74",
+      "bytes": 24056
+    },
+    {
+      "id": "barrels_pair",
+      "path": "assets/models/arena/barrels_pair.glb",
+      "sha256": "a7d0cb197f3c5c122f87407625555426a0ba5513f9646ba59d014dd9113f8856",
+      "bytes": 71808
+    },
+    {
+      "id": "barricade_2m",
+      "path": "assets/models/arena/barricade_2m.glb",
+      "sha256": "b1a4065e772686d23f740a5c09d9b19cc1920992faad28833f5cde470294a84d",
+      "bytes": 28036
+    },
+    {
+      "id": "rubble_cluster",
+      "path": "assets/models/arena/rubble_cluster.glb",
+      "sha256": "fd843dc77b894825550ba0a95489227e49e2b76ef85b5a3e170000fd1abe4eef",
+      "bytes": 20368
+    },
+    {
+      "id": "mine_disc",
+      "path": "assets/models/arena/mine_disc.glb",
+      "sha256": "7a2ce8808ce77d0835af969ff8a0e3e8b6718c9c6a549194d14cda909cb8a2fa",
+      "bytes": 28540
+    },
+    {
+      "id": "shell_standard",
+      "path": "assets/models/arena/shell_standard.glb",
+      "sha256": "6e5b4222443f62b95b620789a0674bbaa72b0e953380183131b49342747454ac",
+      "bytes": 25212
+    },
+    {
+      "id": "shell_rocket",
+      "path": "assets/models/arena/shell_rocket.glb",
+      "sha256": "b350984c1a56e85ae6185179794725e8908c8ae01609d3484f3dacaacc45518a",
+      "bytes": 33216
+    },
+    {
+      "id": "spawn_marker_2m",
+      "path": "assets/models/arena/spawn_marker_2m.glb",
+      "sha256": "d83e8b47285f0b89947f5cffbf6a5fd09d93e1a8ab5153cc745823cd40b5a714",
+      "bytes": 31416
+    }
+  ],
+  "axis": "GLB Y up, tank forward +Z",
+  "scale": "1 unit = 1 meter",
+  "notes": "Static articulated meshes exported from the approved animation rig. Godot scripts drive the same tread travel and wheel axes interactively. Local game-dev packaging CLI unavailable; this is a project import manifest, not a canonical game-dev package."
+}

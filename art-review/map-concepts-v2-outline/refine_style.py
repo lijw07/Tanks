@@ -51,7 +51,7 @@ for scene in bpy.data.scenes:
     for node in scene.compositing_node_group.nodes if getattr(scene,'compositing_node_group',None) else []:
         if node.type=='GLARE':node.mute=True
 bpy.context.window.scene=bpy.data.scenes[manifest['maps'][0]['scene']]
-manifest['style_revision']={'request':'Add outlines and reduce the bloom-like softness','method':'Blender Freestyle charcoal object silhouettes, 1.4 px at final resolution; reduced world/fill/rim; higher roughness and lower specular; Medium High Contrast AgX','bloom':'No glare/bloom effect was present in the original scenes; softness came from lighting/materials','source_map_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()}
+manifest['style_revision']={'method':'Blender Freestyle charcoal object silhouettes, 1.4 px at final resolution; reduced world/fill/rim; higher roughness and lower specular; Medium High Contrast AgX','bloom':'No glare/bloom effect was present in the original scenes; softness came from lighting/materials','source_map_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()}
 manifest['status']='Outlined review concepts; no Godot integration or gameplay validation'
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Pocket_Armor_Map_Concepts_Outlined.blend'))

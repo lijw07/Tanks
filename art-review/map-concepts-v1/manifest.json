@@ -1,9 +1,8 @@
 {
   "title": "Pocket Armor / six map studies",
   "status": "Review concepts; no Godot integration or gameplay validation",
-  "source": "/Users/jaili/projects/godot/tanks/art-review/tank-kit-v1/Pocket_Armor_Review.blend",
+  "source": "art-review/tank-kit-v1/Pocket_Armor_Review.blend",
   "source_sha256": "6c12ecd8355a3cc51306823754061c4822ec83a7e9c3a921241e0c52d2d2de01",
-  "request": "I want you to create me a series of scenes that show different ideas for maps.",
   "asset_spec": {
     "board_m": [
       24,

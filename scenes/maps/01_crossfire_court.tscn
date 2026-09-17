@@ -1,0 +1,3098 @@
+[gd_scene format=4]
+
+[ext_resource type="Script" path="res://scripts/battlefield.gd" id="1_sv8qa"]
+[ext_resource type="Material" path="res://assets/materials/charcoal_outline.tres" id="2_ss0gs"]
+[ext_resource type="PackedScene" path="res://scenes/arena/border_2m.tscn" id="3_b50qj"]
+[ext_resource type="PackedScene" path="res://scenes/arena/border_corner.tscn" id="4_fmm5k"]
+[ext_resource type="PackedScene" path="res://scenes/props/spawn_marker_2m.tscn" id="5_fbr6c"]
+[ext_resource type="PackedScene" path="res://scenes/arena/wall_beech_2m.tscn" id="6_x0mpy"]
+[ext_resource type="PackedScene" path="res://scenes/arena/wall_beech_4m.tscn" id="7_pytvw"]
+[ext_resource type="PackedScene" path="res://scenes/arena/wall_round_pillar.tscn" id="8_lqu5v"]
+[ext_resource type="PackedScene" path="res://scenes/props/crate_1m.tscn" id="9_o4kg0"]
+[ext_resource type="PackedScene" path="res://scenes/props/barrels_pair.tscn" id="10_mfdga"]
+[ext_resource type="PackedScene" path="res://scenes/arena/wall_terracotta_2m.tscn" id="11_phhkx"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_01_azure_scout.tscn" id="12_cs51a"]
+[ext_resource type="Script" path="res://scripts/tank.gd" id="13_1yvta"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_02_mint_cruiser.tscn" id="14_4v7c4"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_03_vermilion_heavy.tscn" id="15_nduo3"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_04_saffron_sprinter.tscn" id="16_ke8go"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_05_violet_marksman.tscn" id="17_ggud5"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_06_ivory_duelist.tscn" id="18_73ocv"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_07_tangerine_siege.tscn" id="19_v5b2h"]
+[ext_resource type="PackedScene" path="res://scenes/tanks/tank_08_charcoal_command.tscn" id="20_xttka"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3g06u"]
+albedo_color = Color(0.654902, 0.4627451, 0.2627451, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jlow5"]
+size = Vector3(97, 0.5, 73)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a1amj"]
+_surfaces = [{
+"aabb": AABB(-48.520206, -0.27020726, -36.520206, 97.04041, 0.5404145, 73.04041),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("sRRCwptYij6xFBJCsRRCQptYij6xFBLCsRRCQptYij6xFBJCsRRCwptYij6xFBLCsRRCwptYir6xFBJCsRRCQptYir6xFBLCsRRCQptYir6xFBJCsRRCwptYir6xFBLCsRRCQptYij6xFBJCsRRCwptYij6xFBLCsRRCQptYij6xFBLCsRRCwptYij6xFBJCsRRCQptYir6xFBJCsRRCwptYir6xFBLCsRRCQptYir6xFBLCsRRCwptYir6xFBJCsRRCQptYij6xFBJCsRRCwptYir6xFBJCsRRCwptYij6xFBJCsRRCQptYir6xFBJCsRRCQptYij6xFBLCsRRCwptYir6xFBLCsRRCwptYij6xFBLCsRRCQptYir6xFBLC/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_27iwy"]
+albedo_color = Color(0.7372549, 0.64705884, 0.5019608, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nwg7k"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e7t6k"]
+albedo_color = Color(0.72156864, 0.627451, 0.48235294, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_atp4i"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n6r2a"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7bv0a"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wnxmq"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xywyd"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r10a5"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g7meo"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4yrrp"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8okv8"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o8388"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1jljr"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wygoh"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u80sl"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kkpx6"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hau30"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gwxc7"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_edtii"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qjurm"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nprim"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mtkd1"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8s57i"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pi6ho"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ykmes"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_keq3a"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_juc4f"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2thb8"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_krnrf"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nuqup"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_84mth"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rin72"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5liql"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4d1iw"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3n5pq"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_evogq"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="BoxMesh" id="BoxMesh_15hyh"]
+size = Vector3(96, 0.2, 1.985)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mnd5"]
+albedo_color = Color(0.36078432, 0.5568628, 0.6, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nen6s"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ees6a"]
+albedo_color = Color(0.6666667, 0.54509807, 0.4509804, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jmbia"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ao0ic"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n3xdl"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ri3kg"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_on0p4"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a16yk"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_57fv6"]
+size = Vector3(2.8, 0.015, 2.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jvys"]
+albedo_color = Color(0.73333335, 0.627451, 0.47058824, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uc24l"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vjxt7"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5u25g"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlqfe"]
+albedo_color = Color(0.68235296, 0.4392157, 0.32941177, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t71wh"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cqrfu"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqvj0"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_okn8k"]
+albedo_color = Color(0.84705883, 0.7490196, 0.5137255, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0r50k"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kqawj"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ky7x3"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2cclh"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6jdhp"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l1lq2"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fmvk3"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dxftk"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jfuk3"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8rusw"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2nah7"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oeakg"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eiblb"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jv24t"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_15rb5"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qysde"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x4u0r"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4m0tw"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_66fxt"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1fmm5"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gobiy"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wqp5a"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_guwwy"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5eiim"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kwgd3"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q1qci"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g5rf5"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l10je"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8kj13"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7qoy1"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_umky5"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r02tv"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_60u52"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8d2r7"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_b0od5"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4x3fj"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s80ce"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n5hak"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7h3jr"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dsfea"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rpq7f"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lmyfr"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yqfie"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bqncm"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cijf"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xmd7x"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yxh5g"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kp1cl"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fl5ys"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_phppn"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8doeh"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l36dn"]
+_surfaces = [{
+"aabb": AABB(-5.0202074, -0.92020726, -0.5202073, 10.040415, 1.8404145, 1.0404146),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("iqWgwLSSaz9OLAU/iqWgQLSSaz9OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgwLSSa79OLAU/iqWgQLSSa79OLAW/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSaz9OLAU/iqWgwLSSaz9OLAW/iqWgQLSSaz9OLAW/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgwLSSa79OLAW/iqWgQLSSa79OLAW/iqWgwLSSa79OLAU/iqWgQLSSaz9OLAU/iqWgwLSSa79OLAU/iqWgwLSSaz9OLAU/iqWgQLSSa79OLAU/iqWgQLSSaz9OLAW/iqWgwLSSa79OLAW/iqWgwLSSaz9OLAW/iqWgQLSSa79OLAW//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8l7ek"]
+size = Vector3(10, 1.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_skfjd"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_v0sbh"]
+_surfaces = [{
+"aabb": AABB(-0.5202073, -0.92020726, -3.5202072, 1.0404146, 1.8404145, 7.0404143),
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TiwFv7SSaz8TS2FATiwFP7SSaz8TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFv7SSa78TS2FATiwFP7SSa78TS2HATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSaz8TS2FATiwFv7SSaz8TS2HATiwFP7SSaz8TS2HATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFv7SSa78TS2HATiwFP7SSa78TS2HATiwFv7SSa78TS2FATiwFP7SSaz8TS2FATiwFv7SSa78TS2FATiwFv7SSaz8TS2FATiwFP7SSa78TS2FATiwFP7SSaz8TS2HATiwFv7SSa78TS2HATiwFv7SSaz8TS2HATiwFP7SSa78TS2HA/3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eu4j5"]
+size = Vector3(1, 1.8, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pr6gi"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hi1fv"]
+size = Vector3(0.8, 0.015, 0.8)
+
+[sub_resource type="Environment" id="Environment_qxk46"]
+background_mode = 1
+background_color = Color(0.09019608, 0.17254902, 0.21960784, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.8235294, 0.8980392, 0.95686275, 1)
+ambient_light_energy = 0.4
+tonemap_mode = 4
+
+[node name="01_crossfire_court" type="Node3D" unique_id=996706498]
+script = ExtResource("1_sv8qa")
+map_title = "Crossfire Court"
+description = "Three broad lanes with staggered cover and outer flanks."
+
+[node name="Geometry" type="Node3D" parent="." unique_id=951243142]
+
+[node name="BoardBase" type="MeshInstance3D" parent="Geometry" unique_id=970555844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.48, 0)
+material_override = SubResource("StandardMaterial3D_3g06u")
+mesh = SubResource("BoxMesh_jlow5")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/BoardBase" unique_id=575965062]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_a1amj")
+metadata/visual_outline = true
+
+[node name="Floor" type="MeshInstance3D" parent="Geometry" unique_id=2074392978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -35)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_nwg7k")
+
+[node name="Floor2" type="MeshInstance3D" parent="Geometry" unique_id=1447955271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -33)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_atp4i")
+
+[node name="Floor3" type="MeshInstance3D" parent="Geometry" unique_id=1591823090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -31)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_n6r2a")
+
+[node name="Floor4" type="MeshInstance3D" parent="Geometry" unique_id=821466245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -29)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_7bv0a")
+
+[node name="Floor5" type="MeshInstance3D" parent="Geometry" unique_id=486695662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -27)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_wnxmq")
+
+[node name="Floor6" type="MeshInstance3D" parent="Geometry" unique_id=1012271847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -25)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_xywyd")
+
+[node name="Floor7" type="MeshInstance3D" parent="Geometry" unique_id=265825591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -23)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_r10a5")
+
+[node name="Floor8" type="MeshInstance3D" parent="Geometry" unique_id=1459738566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -21)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_g7meo")
+
+[node name="Floor9" type="MeshInstance3D" parent="Geometry" unique_id=1169841314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -19)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_4yrrp")
+
+[node name="Floor10" type="MeshInstance3D" parent="Geometry" unique_id=1757288804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -17)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_8okv8")
+
+[node name="Floor11" type="MeshInstance3D" parent="Geometry" unique_id=611550034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -15)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_o8388")
+
+[node name="Floor12" type="MeshInstance3D" parent="Geometry" unique_id=907105861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -13)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_1jljr")
+
+[node name="Floor13" type="MeshInstance3D" parent="Geometry" unique_id=297222928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -11)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_wygoh")
+
+[node name="Floor14" type="MeshInstance3D" parent="Geometry" unique_id=693355941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -9)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_u80sl")
+
+[node name="Floor15" type="MeshInstance3D" parent="Geometry" unique_id=887077062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -7)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_kkpx6")
+
+[node name="Floor16" type="MeshInstance3D" parent="Geometry" unique_id=1259183973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -5)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_hau30")
+
+[node name="Floor17" type="MeshInstance3D" parent="Geometry" unique_id=3790067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -3)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_gwxc7")
+
+[node name="Floor18" type="MeshInstance3D" parent="Geometry" unique_id=1550580532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -1)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_edtii")
+
+[node name="Floor19" type="MeshInstance3D" parent="Geometry" unique_id=2109796700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 1)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_qjurm")
+
+[node name="Floor20" type="MeshInstance3D" parent="Geometry" unique_id=135788171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 3)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_nprim")
+
+[node name="Floor21" type="MeshInstance3D" parent="Geometry" unique_id=1451604915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 5)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_mtkd1")
+
+[node name="Floor22" type="MeshInstance3D" parent="Geometry" unique_id=1998377382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 7)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_8s57i")
+
+[node name="Floor23" type="MeshInstance3D" parent="Geometry" unique_id=161385560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 9)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_pi6ho")
+
+[node name="Floor24" type="MeshInstance3D" parent="Geometry" unique_id=442345002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 11)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_ykmes")
+
+[node name="Floor25" type="MeshInstance3D" parent="Geometry" unique_id=543712581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 13)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_keq3a")
+
+[node name="Floor26" type="MeshInstance3D" parent="Geometry" unique_id=924555794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 15)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_juc4f")
+
+[node name="Floor27" type="MeshInstance3D" parent="Geometry" unique_id=1161132046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 17)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_2thb8")
+
+[node name="Floor28" type="MeshInstance3D" parent="Geometry" unique_id=1018385315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 19)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_krnrf")
+
+[node name="Floor29" type="MeshInstance3D" parent="Geometry" unique_id=994781879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 21)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_nuqup")
+
+[node name="Floor30" type="MeshInstance3D" parent="Geometry" unique_id=751522549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 23)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_84mth")
+
+[node name="Floor31" type="MeshInstance3D" parent="Geometry" unique_id=556096840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 25)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_rin72")
+
+[node name="Floor32" type="MeshInstance3D" parent="Geometry" unique_id=1239694898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 27)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_5liql")
+
+[node name="Floor33" type="MeshInstance3D" parent="Geometry" unique_id=480700674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 29)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_4d1iw")
+
+[node name="Floor34" type="MeshInstance3D" parent="Geometry" unique_id=323450703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 31)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_3n5pq")
+
+[node name="Floor35" type="MeshInstance3D" parent="Geometry" unique_id=42348844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 33)
+material_override = SubResource("StandardMaterial3D_27iwy")
+mesh = SubResource("BoxMesh_evogq")
+
+[node name="Floor36" type="MeshInstance3D" parent="Geometry" unique_id=1097448649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 35)
+material_override = SubResource("StandardMaterial3D_e7t6k")
+mesh = SubResource("BoxMesh_15hyh")
+
+[node name="border_2m" type="StaticBody3D" parent="Geometry" unique_id=1790667436 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m2" type="StaticBody3D" parent="Geometry" unique_id=1425454939 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m3" type="StaticBody3D" parent="Geometry" unique_id=1225322423 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m4" type="StaticBody3D" parent="Geometry" unique_id=1392630267 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m5" type="StaticBody3D" parent="Geometry" unique_id=2089390476 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m6" type="StaticBody3D" parent="Geometry" unique_id=1560232338 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m7" type="StaticBody3D" parent="Geometry" unique_id=1785587638 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m8" type="StaticBody3D" parent="Geometry" unique_id=1838469514 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m9" type="StaticBody3D" parent="Geometry" unique_id=278894947 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m10" type="StaticBody3D" parent="Geometry" unique_id=471363852 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m11" type="StaticBody3D" parent="Geometry" unique_id=1264673708 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m12" type="StaticBody3D" parent="Geometry" unique_id=404235251 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m13" type="StaticBody3D" parent="Geometry" unique_id=632837058 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m14" type="StaticBody3D" parent="Geometry" unique_id=1834481784 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m15" type="StaticBody3D" parent="Geometry" unique_id=925340607 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m16" type="StaticBody3D" parent="Geometry" unique_id=1284700551 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m17" type="StaticBody3D" parent="Geometry" unique_id=143272265 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m18" type="StaticBody3D" parent="Geometry" unique_id=8707620 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m19" type="StaticBody3D" parent="Geometry" unique_id=1293961489 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m20" type="StaticBody3D" parent="Geometry" unique_id=1978176488 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m21" type="StaticBody3D" parent="Geometry" unique_id=1468167625 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m22" type="StaticBody3D" parent="Geometry" unique_id=1717630217 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m23" type="StaticBody3D" parent="Geometry" unique_id=1776282821 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m24" type="StaticBody3D" parent="Geometry" unique_id=164820944 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m25" type="StaticBody3D" parent="Geometry" unique_id=1908086328 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m26" type="StaticBody3D" parent="Geometry" unique_id=50096800 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m27" type="StaticBody3D" parent="Geometry" unique_id=1031845383 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m28" type="StaticBody3D" parent="Geometry" unique_id=1601613296 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m29" type="StaticBody3D" parent="Geometry" unique_id=1114413102 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m30" type="StaticBody3D" parent="Geometry" unique_id=505763866 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m31" type="StaticBody3D" parent="Geometry" unique_id=1779756748 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m32" type="StaticBody3D" parent="Geometry" unique_id=1175331555 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m33" type="StaticBody3D" parent="Geometry" unique_id=561833886 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m34" type="StaticBody3D" parent="Geometry" unique_id=1417518773 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m35" type="StaticBody3D" parent="Geometry" unique_id=940790432 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m36" type="StaticBody3D" parent="Geometry" unique_id=803974803 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m37" type="StaticBody3D" parent="Geometry" unique_id=1286622683 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m38" type="StaticBody3D" parent="Geometry" unique_id=383259427 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m39" type="StaticBody3D" parent="Geometry" unique_id=1719735774 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m40" type="StaticBody3D" parent="Geometry" unique_id=2065981537 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m41" type="StaticBody3D" parent="Geometry" unique_id=1746241699 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m42" type="StaticBody3D" parent="Geometry" unique_id=495416609 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m43" type="StaticBody3D" parent="Geometry" unique_id=32153525 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m44" type="StaticBody3D" parent="Geometry" unique_id=1183419788 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m45" type="StaticBody3D" parent="Geometry" unique_id=219336369 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m46" type="StaticBody3D" parent="Geometry" unique_id=87704597 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m47" type="StaticBody3D" parent="Geometry" unique_id=1507732627 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m48" type="StaticBody3D" parent="Geometry" unique_id=1024487037 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m49" type="StaticBody3D" parent="Geometry" unique_id=1187621287 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m50" type="StaticBody3D" parent="Geometry" unique_id=232146744 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m51" type="StaticBody3D" parent="Geometry" unique_id=1120167839 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m52" type="StaticBody3D" parent="Geometry" unique_id=136149524 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m53" type="StaticBody3D" parent="Geometry" unique_id=1105478113 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m54" type="StaticBody3D" parent="Geometry" unique_id=989459965 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m55" type="StaticBody3D" parent="Geometry" unique_id=844416146 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m56" type="StaticBody3D" parent="Geometry" unique_id=1695490097 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m57" type="StaticBody3D" parent="Geometry" unique_id=1146772220 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m58" type="StaticBody3D" parent="Geometry" unique_id=1934315394 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m59" type="StaticBody3D" parent="Geometry" unique_id=1114302001 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m60" type="StaticBody3D" parent="Geometry" unique_id=770027922 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m61" type="StaticBody3D" parent="Geometry" unique_id=1836228115 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m62" type="StaticBody3D" parent="Geometry" unique_id=1295882794 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m63" type="StaticBody3D" parent="Geometry" unique_id=458793612 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m64" type="StaticBody3D" parent="Geometry" unique_id=2001810904 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m65" type="StaticBody3D" parent="Geometry" unique_id=2005878731 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m66" type="StaticBody3D" parent="Geometry" unique_id=503954257 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m67" type="StaticBody3D" parent="Geometry" unique_id=754697960 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m68" type="StaticBody3D" parent="Geometry" unique_id=1365534480 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m69" type="StaticBody3D" parent="Geometry" unique_id=493408096 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m70" type="StaticBody3D" parent="Geometry" unique_id=1147358172 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m71" type="StaticBody3D" parent="Geometry" unique_id=1511520380 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m72" type="StaticBody3D" parent="Geometry" unique_id=140107781 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m73" type="StaticBody3D" parent="Geometry" unique_id=185092445 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m74" type="StaticBody3D" parent="Geometry" unique_id=1511660346 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m75" type="StaticBody3D" parent="Geometry" unique_id=707248871 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m76" type="StaticBody3D" parent="Geometry" unique_id=665109200 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m77" type="StaticBody3D" parent="Geometry" unique_id=1276441942 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m78" type="StaticBody3D" parent="Geometry" unique_id=1010502021 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m79" type="StaticBody3D" parent="Geometry" unique_id=1153570166 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m80" type="StaticBody3D" parent="Geometry" unique_id=284176340 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m81" type="StaticBody3D" parent="Geometry" unique_id=2009818945 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m82" type="StaticBody3D" parent="Geometry" unique_id=397921840 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m83" type="StaticBody3D" parent="Geometry" unique_id=176535986 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m84" type="StaticBody3D" parent="Geometry" unique_id=1339128887 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m85" type="StaticBody3D" parent="Geometry" unique_id=426079700 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m86" type="StaticBody3D" parent="Geometry" unique_id=333561037 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m87" type="StaticBody3D" parent="Geometry" unique_id=1627321750 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m88" type="StaticBody3D" parent="Geometry" unique_id=864897509 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m89" type="StaticBody3D" parent="Geometry" unique_id=1721471447 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m90" type="StaticBody3D" parent="Geometry" unique_id=2014473020 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m91" type="StaticBody3D" parent="Geometry" unique_id=407064957 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m92" type="StaticBody3D" parent="Geometry" unique_id=1886074312 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m93" type="StaticBody3D" parent="Geometry" unique_id=2021278636 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m94" type="StaticBody3D" parent="Geometry" unique_id=1900382747 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m95" type="StaticBody3D" parent="Geometry" unique_id=107215511 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m96" type="StaticBody3D" parent="Geometry" unique_id=455884581 instance=ExtResource("3_b50qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m97" type="StaticBody3D" parent="Geometry" unique_id=2063492906 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -35)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m98" type="StaticBody3D" parent="Geometry" unique_id=747398677 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -35)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m99" type="StaticBody3D" parent="Geometry" unique_id=1327631030 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -33)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m100" type="StaticBody3D" parent="Geometry" unique_id=301833325 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -33)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m101" type="StaticBody3D" parent="Geometry" unique_id=749376007 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -31)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m102" type="StaticBody3D" parent="Geometry" unique_id=1774257551 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -31)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m103" type="StaticBody3D" parent="Geometry" unique_id=890439219 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -29)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m104" type="StaticBody3D" parent="Geometry" unique_id=875251177 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -29)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m105" type="StaticBody3D" parent="Geometry" unique_id=1499196234 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -27)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m106" type="StaticBody3D" parent="Geometry" unique_id=330899602 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -27)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m107" type="StaticBody3D" parent="Geometry" unique_id=847684553 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -25)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m108" type="StaticBody3D" parent="Geometry" unique_id=750688054 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -25)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m109" type="StaticBody3D" parent="Geometry" unique_id=454744440 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -23)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m110" type="StaticBody3D" parent="Geometry" unique_id=229705356 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -23)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m111" type="StaticBody3D" parent="Geometry" unique_id=1138350 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -21)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m112" type="StaticBody3D" parent="Geometry" unique_id=458505857 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -21)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m113" type="StaticBody3D" parent="Geometry" unique_id=964832751 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -19)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m114" type="StaticBody3D" parent="Geometry" unique_id=419577029 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -19)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m115" type="StaticBody3D" parent="Geometry" unique_id=2146990178 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -17)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m116" type="StaticBody3D" parent="Geometry" unique_id=2135876726 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -17)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m117" type="StaticBody3D" parent="Geometry" unique_id=276394333 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -15)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m118" type="StaticBody3D" parent="Geometry" unique_id=935210206 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -15)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m119" type="StaticBody3D" parent="Geometry" unique_id=1223914518 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -13)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m120" type="StaticBody3D" parent="Geometry" unique_id=976613458 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -13)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m121" type="StaticBody3D" parent="Geometry" unique_id=208559760 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -11)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m122" type="StaticBody3D" parent="Geometry" unique_id=498400556 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -11)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m123" type="StaticBody3D" parent="Geometry" unique_id=1534940667 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -9)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m124" type="StaticBody3D" parent="Geometry" unique_id=1751041691 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -9)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m125" type="StaticBody3D" parent="Geometry" unique_id=564609492 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -7)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m126" type="StaticBody3D" parent="Geometry" unique_id=1428790527 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -7)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m127" type="StaticBody3D" parent="Geometry" unique_id=1767998047 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -5)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m128" type="StaticBody3D" parent="Geometry" unique_id=1766398024 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -5)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m129" type="StaticBody3D" parent="Geometry" unique_id=1521689217 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -3)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m130" type="StaticBody3D" parent="Geometry" unique_id=190989286 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -3)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m131" type="StaticBody3D" parent="Geometry" unique_id=4213720 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, -1)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m132" type="StaticBody3D" parent="Geometry" unique_id=1935703306 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, -1)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m133" type="StaticBody3D" parent="Geometry" unique_id=595283243 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 1)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m134" type="StaticBody3D" parent="Geometry" unique_id=1611731509 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 1)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m135" type="StaticBody3D" parent="Geometry" unique_id=374934923 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 3)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m136" type="StaticBody3D" parent="Geometry" unique_id=2029458425 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 3)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m137" type="StaticBody3D" parent="Geometry" unique_id=996280403 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 5)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m138" type="StaticBody3D" parent="Geometry" unique_id=891767870 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 5)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m139" type="StaticBody3D" parent="Geometry" unique_id=1006915247 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 7)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m140" type="StaticBody3D" parent="Geometry" unique_id=1207821715 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 7)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m141" type="StaticBody3D" parent="Geometry" unique_id=758732381 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 9)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m142" type="StaticBody3D" parent="Geometry" unique_id=921110072 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 9)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m143" type="StaticBody3D" parent="Geometry" unique_id=1770377877 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 11)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m144" type="StaticBody3D" parent="Geometry" unique_id=895755388 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 11)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m145" type="StaticBody3D" parent="Geometry" unique_id=372349437 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 13)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m146" type="StaticBody3D" parent="Geometry" unique_id=1670842276 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 13)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m147" type="StaticBody3D" parent="Geometry" unique_id=594975115 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 15)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m148" type="StaticBody3D" parent="Geometry" unique_id=406766501 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 15)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m149" type="StaticBody3D" parent="Geometry" unique_id=684888966 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 17)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m150" type="StaticBody3D" parent="Geometry" unique_id=2009564561 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 17)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m151" type="StaticBody3D" parent="Geometry" unique_id=1149616169 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 19)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m152" type="StaticBody3D" parent="Geometry" unique_id=1824009164 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 19)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m153" type="StaticBody3D" parent="Geometry" unique_id=21220899 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 21)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m154" type="StaticBody3D" parent="Geometry" unique_id=317944878 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 21)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m155" type="StaticBody3D" parent="Geometry" unique_id=531315873 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 23)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m156" type="StaticBody3D" parent="Geometry" unique_id=1329533263 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 23)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m157" type="StaticBody3D" parent="Geometry" unique_id=1310358907 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 25)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m158" type="StaticBody3D" parent="Geometry" unique_id=1261599749 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 25)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m159" type="StaticBody3D" parent="Geometry" unique_id=787121214 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 27)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m160" type="StaticBody3D" parent="Geometry" unique_id=433641918 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 27)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m161" type="StaticBody3D" parent="Geometry" unique_id=756672389 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 29)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m162" type="StaticBody3D" parent="Geometry" unique_id=1539027064 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 29)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m163" type="StaticBody3D" parent="Geometry" unique_id=488210930 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 31)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m164" type="StaticBody3D" parent="Geometry" unique_id=463105222 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 31)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m165" type="StaticBody3D" parent="Geometry" unique_id=812480567 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 33)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m166" type="StaticBody3D" parent="Geometry" unique_id=1665792233 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 33)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m167" type="StaticBody3D" parent="Geometry" unique_id=1107158927 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.2, 0, 35)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_2m168" type="StaticBody3D" parent="Geometry" unique_id=1368592887 instance=ExtResource("3_b50qj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.2, 0, 35)
+collision_mask = 0
+metadata/asset_id = "border_2m"
+metadata/source_model = "assets/models/arena/border_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_corner" type="StaticBody3D" parent="Geometry" unique_id=582205068 instance=ExtResource("4_fmm5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.2, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_corner"
+metadata/source_model = "assets/models/arena/border_corner.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_corner2" type="StaticBody3D" parent="Geometry" unique_id=1996373398 instance=ExtResource("4_fmm5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.2, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_corner"
+metadata/source_model = "assets/models/arena/border_corner.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_corner3" type="StaticBody3D" parent="Geometry" unique_id=1205022367 instance=ExtResource("4_fmm5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.2, 0, -36.2)
+collision_mask = 0
+metadata/asset_id = "border_corner"
+metadata/source_model = "assets/models/arena/border_corner.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="border_corner4" type="StaticBody3D" parent="Geometry" unique_id=1849162965 instance=ExtResource("4_fmm5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.2, 0, 36.2)
+collision_mask = 0
+metadata/asset_id = "border_corner"
+metadata/source_model = "assets/models/arena/border_corner.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad01" type="MeshInstance3D" parent="Geometry" unique_id=1316047602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.008, 27)
+material_override = SubResource("StandardMaterial3D_8mnd5")
+mesh = SubResource("BoxMesh_nen6s")
+metadata/spawn_index = 0
+
+[node name="spawn_marker_2m" type="StaticBody3D" parent="Geometry" unique_id=1138820221 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 27)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad02" type="MeshInstance3D" parent="Geometry" unique_id=226100615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.008, -27)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_jmbia")
+metadata/spawn_index = 1
+
+[node name="spawn_marker_2m2" type="StaticBody3D" parent="Geometry" unique_id=265520558 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, -27)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad03" type="MeshInstance3D" parent="Geometry" unique_id=712221365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.008, -27)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_ao0ic")
+metadata/spawn_index = 2
+
+[node name="spawn_marker_2m3" type="StaticBody3D" parent="Geometry" unique_id=2059234437 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -27)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad04" type="MeshInstance3D" parent="Geometry" unique_id=1107930795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.008, 27)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_n3xdl")
+metadata/spawn_index = 3
+
+[node name="spawn_marker_2m4" type="StaticBody3D" parent="Geometry" unique_id=128188702 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 27)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad05" type="MeshInstance3D" parent="Geometry" unique_id=1128277343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.008, 28)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_ri3kg")
+metadata/spawn_index = 4
+
+[node name="spawn_marker_2m5" type="StaticBody3D" parent="Geometry" unique_id=28209955 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 28)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad06" type="MeshInstance3D" parent="Geometry" unique_id=1293632232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.008, -28)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_on0p4")
+metadata/spawn_index = 5
+
+[node name="spawn_marker_2m6" type="StaticBody3D" parent="Geometry" unique_id=122579587 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -28)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad07" type="MeshInstance3D" parent="Geometry" unique_id=1649198444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.008, 0)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_a16yk")
+metadata/spawn_index = 6
+
+[node name="spawn_marker_2m7" type="StaticBody3D" parent="Geometry" unique_id=908027557 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 0)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnPad08" type="MeshInstance3D" parent="Geometry" unique_id=1914049262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.008, 0)
+material_override = SubResource("StandardMaterial3D_ees6a")
+mesh = SubResource("BoxMesh_57fv6")
+metadata/spawn_index = 7
+
+[node name="spawn_marker_2m8" type="StaticBody3D" parent="Geometry" unique_id=584819846 instance=ExtResource("5_fbr6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+collision_mask = 0
+metadata/asset_id = "spawn_marker_2m"
+metadata/source_model = "assets/models/arena/spawn_marker_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m" type="StaticBody3D" parent="Geometry" unique_id=1154642163 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, -12)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m2" type="StaticBody3D" parent="Geometry" unique_id=1626293773 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, -10)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m3" type="StaticBody3D" parent="Geometry" unique_id=1205553531 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, -8)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m4" type="StaticBody3D" parent="Geometry" unique_id=1858636450 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, -6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m5" type="StaticBody3D" parent="Geometry" unique_id=2062944975 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, -4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m6" type="StaticBody3D" parent="Geometry" unique_id=1969233775 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, 4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m7" type="StaticBody3D" parent="Geometry" unique_id=1429218973 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, 6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m8" type="StaticBody3D" parent="Geometry" unique_id=431464908 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, 8)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m9" type="StaticBody3D" parent="Geometry" unique_id=332748229 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, 10)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m10" type="StaticBody3D" parent="Geometry" unique_id=1507229292 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0, 12)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m11" type="StaticBody3D" parent="Geometry" unique_id=297769003 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, -12)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m12" type="StaticBody3D" parent="Geometry" unique_id=109315778 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, -10)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m13" type="StaticBody3D" parent="Geometry" unique_id=1205710267 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, -8)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m14" type="StaticBody3D" parent="Geometry" unique_id=755753815 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, -6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m15" type="StaticBody3D" parent="Geometry" unique_id=366027807 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, -4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m16" type="StaticBody3D" parent="Geometry" unique_id=1627282969 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, 4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m17" type="StaticBody3D" parent="Geometry" unique_id=1010545568 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, 6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m18" type="StaticBody3D" parent="Geometry" unique_id=2120262019 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, 8)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m19" type="StaticBody3D" parent="Geometry" unique_id=89009637 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, 10)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m20" type="StaticBody3D" parent="Geometry" unique_id=1010264411 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0, 12)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m" type="StaticBody3D" parent="Geometry" unique_id=1889552690 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m2" type="StaticBody3D" parent="Geometry" unique_id=129306966 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m3" type="StaticBody3D" parent="Geometry" unique_id=1487035429 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m4" type="StaticBody3D" parent="Geometry" unique_id=280361687 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 6)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m5" type="StaticBody3D" parent="Geometry" unique_id=1761212176 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m6" type="StaticBody3D" parent="Geometry" unique_id=923315321 instance=ExtResource("7_pytvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_round_pillar" type="StaticBody3D" parent="Geometry" unique_id=374013221 instance=ExtResource("8_lqu5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -10)
+collision_mask = 0
+metadata/asset_id = "wall_round_pillar"
+metadata/source_model = "assets/models/arena/wall_round_pillar.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_round_pillar2" type="StaticBody3D" parent="Geometry" unique_id=1033185755 instance=ExtResource("8_lqu5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 10)
+collision_mask = 0
+metadata/asset_id = "wall_round_pillar"
+metadata/source_model = "assets/models/arena/wall_round_pillar.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_round_pillar3" type="StaticBody3D" parent="Geometry" unique_id=1257521831 instance=ExtResource("8_lqu5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+collision_mask = 0
+metadata/asset_id = "wall_round_pillar"
+metadata/source_model = "assets/models/arena/wall_round_pillar.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_round_pillar4" type="StaticBody3D" parent="Geometry" unique_id=597525329 instance=ExtResource("8_lqu5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 10)
+collision_mask = 0
+metadata/asset_id = "wall_round_pillar"
+metadata/source_model = "assets/models/arena/wall_round_pillar.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m" type="StaticBody3D" parent="Geometry" unique_id=413932729 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, -15, 0, -13)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m2" type="StaticBody3D" parent="Geometry" unique_id=1028728933 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, -15, 0, 13)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m3" type="StaticBody3D" parent="Geometry" unique_id=1140430426 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 15, 0, -13)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m4" type="StaticBody3D" parent="Geometry" unique_id=834923668 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 15, 0, 13)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m7" type="StaticBody3D" parent="Geometry" unique_id=1643254698 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m8" type="StaticBody3D" parent="Geometry" unique_id=181393443 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27, 0, -14)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m5" type="StaticBody3D" parent="Geometry" unique_id=357789021 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -30, 0, -20)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="barrels_pair" type="StaticBody3D" parent="Geometry" unique_id=397663338 instance=ExtResource("10_mfdga")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24, 0, -13)
+collision_mask = 0
+metadata/asset_id = "barrels_pair"
+metadata/source_model = "assets/models/arena/barrels_pair.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m9" type="StaticBody3D" parent="Geometry" unique_id=2072115193 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27, 0, 14)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m10" type="StaticBody3D" parent="Geometry" unique_id=1830609784 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m6" type="StaticBody3D" parent="Geometry" unique_id=1452019683 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -30, 0, 20)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="barrels_pair2" type="StaticBody3D" parent="Geometry" unique_id=825045196 instance=ExtResource("10_mfdga")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24, 0, 13)
+collision_mask = 0
+metadata/asset_id = "barrels_pair"
+metadata/source_model = "assets/models/arena/barrels_pair.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m11" type="StaticBody3D" parent="Geometry" unique_id=501734002 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m12" type="StaticBody3D" parent="Geometry" unique_id=1372989482 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27, 0, -14)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m7" type="StaticBody3D" parent="Geometry" unique_id=1258145895 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 30, 0, -20)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="barrels_pair3" type="StaticBody3D" parent="Geometry" unique_id=901374159 instance=ExtResource("10_mfdga")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24, 0, -13)
+collision_mask = 0
+metadata/asset_id = "barrels_pair"
+metadata/source_model = "assets/models/arena/barrels_pair.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m13" type="StaticBody3D" parent="Geometry" unique_id=1330707968 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27, 0, 14)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_4m14" type="StaticBody3D" parent="Geometry" unique_id=961315873 instance=ExtResource("7_pytvw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_4m"
+metadata/source_model = "assets/models/arena/wall_beech_4m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="crate_1m8" type="StaticBody3D" parent="Geometry" unique_id=1203083774 instance=ExtResource("9_o4kg0")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 30, 0, 20)
+collision_mask = 0
+metadata/asset_id = "crate_1m"
+metadata/source_model = "assets/models/arena/crate_1m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="barrels_pair4" type="StaticBody3D" parent="Geometry" unique_id=2051151989 instance=ExtResource("10_mfdga")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24, 0, 13)
+collision_mask = 0
+metadata/asset_id = "barrels_pair"
+metadata/source_model = "assets/models/arena/barrels_pair.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m21" type="StaticBody3D" parent="Geometry" unique_id=1183554048 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 0, -2)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m22" type="StaticBody3D" parent="Geometry" unique_id=1284763343 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 0, 0)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m23" type="StaticBody3D" parent="Geometry" unique_id=332200006 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 0, 2)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m24" type="StaticBody3D" parent="Geometry" unique_id=587619506 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 25, 0, -2)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m25" type="StaticBody3D" parent="Geometry" unique_id=1364066482 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 25, 0, 0)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m26" type="StaticBody3D" parent="Geometry" unique_id=305758743 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 25, 0, 2)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m" type="StaticBody3D" parent="Geometry" unique_id=1000686146 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m2" type="StaticBody3D" parent="Geometry" unique_id=750743547 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m3" type="StaticBody3D" parent="Geometry" unique_id=1120699414 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m4" type="StaticBody3D" parent="Geometry" unique_id=945044420 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m27" type="StaticBody3D" parent="Geometry" unique_id=1591089630 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m28" type="StaticBody3D" parent="Geometry" unique_id=1362850977 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m29" type="StaticBody3D" parent="Geometry" unique_id=229560633 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m30" type="StaticBody3D" parent="Geometry" unique_id=199264024 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m31" type="StaticBody3D" parent="Geometry" unique_id=1849433801 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m32" type="StaticBody3D" parent="Geometry" unique_id=994182165 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m5" type="StaticBody3D" parent="Geometry" unique_id=624600344 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m6" type="StaticBody3D" parent="Geometry" unique_id=478849771 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m7" type="StaticBody3D" parent="Geometry" unique_id=1928323844 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_terracotta_2m8" type="StaticBody3D" parent="Geometry" unique_id=417940816 instance=ExtResource("11_phhkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 23)
+collision_mask = 0
+metadata/asset_id = "wall_terracotta_2m"
+metadata/source_model = "assets/models/arena/wall_terracotta_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m33" type="StaticBody3D" parent="Geometry" unique_id=1123978619 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m34" type="StaticBody3D" parent="Geometry" unique_id=2099999516 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m35" type="StaticBody3D" parent="Geometry" unique_id=1755162247 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m36" type="StaticBody3D" parent="Geometry" unique_id=1827032606 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m37" type="StaticBody3D" parent="Geometry" unique_id=1303448692 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="wall_beech_2m38" type="StaticBody3D" parent="Geometry" unique_id=1908423662 instance=ExtResource("6_x0mpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18)
+collision_mask = 0
+metadata/asset_id = "wall_beech_2m"
+metadata/source_model = "assets/models/arena/wall_beech_2m.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="SpawnShelter01" type="Node3D" parent="Geometry" unique_id=332417960]
+transform = Transform3D(-0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, -0.55947286, -40, 0, 27)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter01" unique_id=2136561773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_uc24l")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter01/Front shield" unique_id=1970291529]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_vjxt7")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter01/Front shield" unique_id=1156735762]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter01/Front shield/Solid" unique_id=153907488]
+shape = SubResource("BoxShape3D_5u25g")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter01" unique_id=243015159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_t71wh")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter01/Side baffle" unique_id=1586799483]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_cqrfu")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter01/Side baffle" unique_id=624387022]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter01/Side baffle/Solid" unique_id=1661968344]
+shape = SubResource("BoxShape3D_aqvj0")
+
+[node name="Exit marking" type="MeshInstance3D" parent="Geometry" unique_id=1781209584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.922897, 0.01, 31.558668)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_0r50k")
+
+[node name="Exit marking2" type="MeshInstance3D" parent="Geometry" unique_id=193899140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.077103, 0.01, 22.441332)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_kqawj")
+
+[node name="SpawnShelter02" type="Node3D" parent="Geometry" unique_id=1753087116]
+transform = Transform3D(0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, 0.55947286, 40, 0, -27)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter02" unique_id=59793634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_ky7x3")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter02/Front shield" unique_id=1317521550]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_2cclh")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter02/Front shield" unique_id=1140139060]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter02/Front shield/Solid" unique_id=89631454]
+shape = SubResource("BoxShape3D_6jdhp")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter02" unique_id=1011453573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_l1lq2")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter02/Side baffle" unique_id=1520190843]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_fmvk3")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter02/Side baffle" unique_id=1074240673]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter02/Side baffle/Solid" unique_id=791178625]
+shape = SubResource("BoxShape3D_dxftk")
+
+[node name="Exit marking3" type="MeshInstance3D" parent="Geometry" unique_id=994333958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.922897, 0.01, -31.558668)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_jfuk3")
+
+[node name="Exit marking4" type="MeshInstance3D" parent="Geometry" unique_id=663167182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.077103, 0.01, -22.441332)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_8rusw")
+
+[node name="SpawnShelter03" type="Node3D" parent="Geometry" unique_id=915332008]
+transform = Transform3D(0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, 0.55947286, -40, 0, -27)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter03" unique_id=1104399009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_2nah7")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter03/Front shield" unique_id=1214422085]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_oeakg")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter03/Front shield" unique_id=619291931]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter03/Front shield/Solid" unique_id=1168369423]
+shape = SubResource("BoxShape3D_eiblb")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter03" unique_id=326610253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_jv24t")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter03/Side baffle" unique_id=181575667]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_15rb5")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter03/Side baffle" unique_id=1209924999]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter03/Side baffle/Solid" unique_id=3565775]
+shape = SubResource("BoxShape3D_qysde")
+
+[node name="Exit marking5" type="MeshInstance3D" parent="Geometry" unique_id=1063708047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.077103, 0.01, -22.441332)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_x4u0r")
+
+[node name="Exit marking6" type="MeshInstance3D" parent="Geometry" unique_id=1655903884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.922897, 0.01, -31.558668)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_4m0tw")
+
+[node name="SpawnShelter04" type="Node3D" parent="Geometry" unique_id=1175718637]
+transform = Transform3D(-0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, -0.55947286, 40, 0, 27)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter04" unique_id=1908790957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_66fxt")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter04/Front shield" unique_id=34953237]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_1fmm5")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter04/Front shield" unique_id=354534501]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter04/Front shield/Solid" unique_id=457592063]
+shape = SubResource("BoxShape3D_gobiy")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter04" unique_id=1740252230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_wqp5a")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter04/Side baffle" unique_id=1471744920]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_guwwy")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter04/Side baffle" unique_id=217923076]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter04/Side baffle/Solid" unique_id=930220839]
+shape = SubResource("BoxShape3D_5eiim")
+
+[node name="Exit marking7" type="MeshInstance3D" parent="Geometry" unique_id=245023900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.077103, 0.01, 22.441332)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_kwgd3")
+
+[node name="Exit marking8" type="MeshInstance3D" parent="Geometry" unique_id=923544738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.922897, 0.01, 31.558668)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_q1qci")
+
+[node name="SpawnShelter05" type="Node3D" parent="Geometry" unique_id=330845503]
+transform = Transform3D(-0.89442724, 0, 0.4472135, 0, 1, 0, -0.4472135, 0, -0.89442724, -14, 0, 28)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter05" unique_id=1443356339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_g5rf5")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter05/Front shield" unique_id=40374244]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_l10je")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter05/Front shield" unique_id=1911147967]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter05/Front shield/Solid" unique_id=705698807]
+shape = SubResource("BoxShape3D_8kj13")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter05" unique_id=2043390029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_7qoy1")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter05/Side baffle" unique_id=959975610]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_umky5")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter05/Side baffle" unique_id=1007503183]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter05/Side baffle/Solid" unique_id=43024119]
+shape = SubResource("BoxShape3D_r02tv")
+
+[node name="Exit marking9" type="MeshInstance3D" parent="Geometry" unique_id=2118840682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.08065, 0.01, 30.459675)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_60u52")
+
+[node name="Exit marking10" type="MeshInstance3D" parent="Geometry" unique_id=40643585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.91935, 0.01, 25.540325)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_8d2r7")
+
+[node name="SpawnShelter06" type="Node3D" parent="Geometry" unique_id=259092448]
+transform = Transform3D(0.8944272, 0, -0.4472136, 0, 1, 0, 0.4472136, 0, 0.8944272, 14, 0, -28)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter06" unique_id=379356174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_b0od5")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter06/Front shield" unique_id=1216875845]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_4x3fj")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter06/Front shield" unique_id=186453981]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter06/Front shield/Solid" unique_id=568835415]
+shape = SubResource("BoxShape3D_s80ce")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter06" unique_id=1163441327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_n5hak")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter06/Side baffle" unique_id=941688094]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_7h3jr")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter06/Side baffle" unique_id=102836245]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter06/Side baffle/Solid" unique_id=2022659443]
+shape = SubResource("BoxShape3D_dsfea")
+
+[node name="Exit marking11" type="MeshInstance3D" parent="Geometry" unique_id=1032165881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.08065, 0.01, -30.459675)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_rpq7f")
+
+[node name="Exit marking12" type="MeshInstance3D" parent="Geometry" unique_id=115571566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.91935, 0.01, -25.540325)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_lmyfr")
+
+[node name="SpawnShelter07" type="Node3D" parent="Geometry" unique_id=1661446409]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40, 0, 0)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter07" unique_id=1752352246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_yqfie")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter07/Front shield" unique_id=2079481893]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_bqncm")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter07/Front shield" unique_id=1979057931]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter07/Front shield/Solid" unique_id=1388577223]
+shape = SubResource("BoxShape3D_4cijf")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter07" unique_id=1532815309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_xmd7x")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter07/Side baffle" unique_id=929662170]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_yxh5g")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter07/Side baffle" unique_id=927263875]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter07/Side baffle/Solid" unique_id=1153977148]
+shape = SubResource("BoxShape3D_kp1cl")
+
+[node name="Exit marking13" type="MeshInstance3D" parent="Geometry" unique_id=629276810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.01, 5.5)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_fl5ys")
+
+[node name="Exit marking14" type="MeshInstance3D" parent="Geometry" unique_id=905758617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.01, -5.5)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_phppn")
+
+[node name="SpawnShelter08" type="Node3D" parent="Geometry" unique_id=1254932159]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 40, 0, 0)
+
+[node name="Front shield" type="MeshInstance3D" parent="Geometry/SpawnShelter08" unique_id=135652225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 6)
+material_override = SubResource("StandardMaterial3D_5jvys")
+mesh = SubResource("BoxMesh_8doeh")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter08/Front shield" unique_id=2014194551]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_l36dn")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter08/Front shield" unique_id=952121337]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter08/Front shield/Solid" unique_id=821652881]
+shape = SubResource("BoxShape3D_8l7ek")
+
+[node name="Side baffle" type="MeshInstance3D" parent="Geometry/SpawnShelter08" unique_id=112954120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_dlqfe")
+mesh = SubResource("BoxMesh_skfjd")
+
+[node name="CharcoalOutline" type="MeshInstance3D" parent="Geometry/SpawnShelter08/Side baffle" unique_id=261511961]
+material_override = ExtResource("2_ss0gs")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_v0sbh")
+metadata/visual_outline = true
+
+[node name="Solid" type="StaticBody3D" parent="Geometry/SpawnShelter08/Side baffle" unique_id=2087455182]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/SpawnShelter08/Side baffle/Solid" unique_id=512844970]
+shape = SubResource("BoxShape3D_eu4j5")
+
+[node name="Exit marking15" type="MeshInstance3D" parent="Geometry" unique_id=377229629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.01, -5.5)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_pr6gi")
+
+[node name="Exit marking16" type="MeshInstance3D" parent="Geometry" unique_id=357731269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.01, 5.5)
+material_override = SubResource("StandardMaterial3D_okn8k")
+mesh = SubResource("BoxMesh_hi1fv")
+
+[node name="Spawns" type="Node3D" parent="." unique_id=300725330]
+
+[node name="Spawn01" type="Marker3D" parent="Spawns" unique_id=560428554]
+transform = Transform3D(-0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, -0.55947286, -40, 0, 27)
+
+[node name="Spawn02" type="Marker3D" parent="Spawns" unique_id=1578553075]
+transform = Transform3D(0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, 0.55947286, 40, 0, -27)
+
+[node name="Spawn03" type="Marker3D" parent="Spawns" unique_id=1288005182]
+transform = Transform3D(0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, 0.55947286, -40, 0, -27)
+
+[node name="Spawn04" type="Marker3D" parent="Spawns" unique_id=1110993284]
+transform = Transform3D(-0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, -0.55947286, 40, 0, 27)
+
+[node name="Spawn05" type="Marker3D" parent="Spawns" unique_id=2144388927]
+transform = Transform3D(-0.89442724, 0, 0.4472135, 0, 1, 0, -0.4472135, 0, -0.89442724, -14, 0, 28)
+
+[node name="Spawn06" type="Marker3D" parent="Spawns" unique_id=1689094361]
+transform = Transform3D(0.8944272, 0, -0.4472136, 0, 1, 0, 0.4472136, 0, 0.8944272, 14, 0, -28)
+
+[node name="Spawn07" type="Marker3D" parent="Spawns" unique_id=1231234967]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40, 0, 0)
+
+[node name="Spawn08" type="Marker3D" parent="Spawns" unique_id=1099040954]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 40, 0, 0)
+
+[node name="Preview" type="Node3D" parent="." unique_id=440926893]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Preview" unique_id=167588041]
+environment = SubResource("Environment_qxk46")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Preview" unique_id=1239306945]
+transform = Transform3D(0.8660254, 0.40957603, -0.28678823, 0, 0.57357645, 0.81915206, 0.5, -0.7094065, 0.49673176, 0, 0, 0)
+light_energy = 0.9
+shadow_enabled = true
+directional_shadow_max_distance = 220.0
+
+[node name="OverviewCamera" type="Camera3D" parent="Preview" unique_id=1413913716]
+transform = Transform3D(1, 0, 0, 0, 0.6, 0.8, 0, -0.8, 0.6, 0, 96, 72)
+projection = 1
+current = true
+size = 94.0
+
+[node name="PreviewTank01" type="CharacterBody3D" parent="Preview" unique_id=397456849 instance=ExtResource("12_cs51a")]
+process_mode = 4
+transform = Transform3D(-0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, -0.55947286, -40, 0, 27)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+metadata/asset_id = "tank_01_azure_scout"
+metadata/source_model = "assets/models/tanks/tank_01_azure_scout.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank02" type="CharacterBody3D" parent="Preview" unique_id=1717350362 instance=ExtResource("14_4v7c4")]
+process_mode = 4
+transform = Transform3D(0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, 0.55947286, 40, 0, -27)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 1
+metadata/asset_id = "tank_02_mint_cruiser"
+metadata/source_model = "assets/models/tanks/tank_02_mint_cruiser.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank03" type="CharacterBody3D" parent="Preview" unique_id=1515796526 instance=ExtResource("15_nduo3")]
+process_mode = 4
+transform = Transform3D(0.55947286, 0, 0.82884866, 0, 1, 0, -0.82884866, 0, 0.55947286, -40, 0, -27)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 2
+metadata/asset_id = "tank_03_vermilion_heavy"
+metadata/source_model = "assets/models/tanks/tank_03_vermilion_heavy.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank04" type="CharacterBody3D" parent="Preview" unique_id=1721998784 instance=ExtResource("16_ke8go")]
+process_mode = 4
+transform = Transform3D(-0.55947286, 0, -0.82884866, 0, 1, 0, 0.82884866, 0, -0.55947286, 40, 0, 27)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 3
+metadata/asset_id = "tank_04_saffron_sprinter"
+metadata/source_model = "assets/models/tanks/tank_04_saffron_sprinter.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank05" type="CharacterBody3D" parent="Preview" unique_id=279218286 instance=ExtResource("17_ggud5")]
+process_mode = 4
+transform = Transform3D(-0.89442724, 0, 0.4472135, 0, 1, 0, -0.4472135, 0, -0.89442724, -14, 0, 28)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 4
+metadata/asset_id = "tank_05_violet_marksman"
+metadata/source_model = "assets/models/tanks/tank_05_violet_marksman.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank06" type="CharacterBody3D" parent="Preview" unique_id=200839082 instance=ExtResource("18_73ocv")]
+process_mode = 4
+transform = Transform3D(0.8944272, 0, -0.4472136, 0, 1, 0, 0.4472136, 0, 0.8944272, 14, 0, -28)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 5
+metadata/asset_id = "tank_06_ivory_duelist"
+metadata/source_model = "assets/models/tanks/tank_06_ivory_duelist.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank07" type="CharacterBody3D" parent="Preview" unique_id=397593899 instance=ExtResource("19_v5b2h")]
+process_mode = 4
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40, 0, 0)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 6
+metadata/asset_id = "tank_07_tangerine_siege"
+metadata/source_model = "assets/models/tanks/tank_07_tangerine_siege.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."
+
+[node name="PreviewTank08" type="CharacterBody3D" parent="Preview" unique_id=920258746 instance=ExtResource("20_xttka")]
+process_mode = 4
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 40, 0, 0)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("13_1yvta")
+variant = 7
+metadata/asset_id = "tank_08_charcoal_command"
+metadata/source_model = "assets/models/tanks/tank_08_charcoal_command.glb"
+metadata/collision_method = "Mesh-derived convex hulls for the tank; triangle surfaces for static assets."

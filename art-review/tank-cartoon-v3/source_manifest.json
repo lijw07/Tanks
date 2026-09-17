@@ -1,14 +1,8 @@
 {
   "name": "Pocket Armor modular toy tank kit",
   "version": "0.1.0-review",
-  "status": "Awaiting user visual approval; NOT imported to Godot",
+  "status": "Review build; not imported to Godot",
   "source": "Original geometry authored locally in Blender; Wii Play Tanks! is a visual reference only. No extracted game assets.",
-  "authoring_request": "Create a modular Blender scene inspired by Wii Tanks with tanks of different colors, shapes and sizes, and modular assets for later Godot use. Show results before any Godot import.",
-  "negative_constraints": [
-    "No Godot import or scene edits before approval",
-    "No copied Nintendo models or textures",
-    "No provider generation or paid calls"
-  ],
   "units": "meters",
   "blender_up": "Z",
   "blender_forward": "-Y",

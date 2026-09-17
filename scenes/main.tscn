@@ -1,0 +1,30 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_muem4"]
+[sub_resource type="Environment" id="Environment_kmb1v"]
+background_mode = 1
+background_color = Color(0.09019608, 0.17254902, 0.21960784, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.8235294, 0.8980392, 0.95686275, 1)
+ambient_light_energy = 0.4
+tonemap_mode = 4
+
+[node name="PocketArmor" type="Node3D" unique_id=1458139152]
+script = ExtResource("1_muem4")
+
+[node name="Arena" type="Node3D" parent="." unique_id=1099600254]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=770767103]
+transform = Transform3D(1, 0, 0, 0, 0.6, -0.8, 0, 0.8, 0.6, 0, 48, 36)
+projection = 1
+current = true
+size = 50.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=695804299]
+environment = SubResource("Environment_kmb1v")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=58248356]
+transform = Transform3D(0.8660254, 0.40957603, -0.28678823, 0, 0.57357645, 0.81915206, 0.5, -0.7094065, 0.49673176, 0, 0, 0)
+light_energy = 0.9
+shadow_enabled = true
+directional_shadow_max_distance = 120.0

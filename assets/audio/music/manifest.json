@@ -1,0 +1,43 @@
+{
+  "generator": "tools/build_music.py",
+  "source_sha256": "cab93dbe2fdb9b417714571349e0cb4e184e35986b1741c5b8836989ee9d7cbb",
+  "provenance": "Original melody, harmony, arrangement, instrument synthesis and percussion created locally for Pocket Armor. No third-party samples, existing song, external generator or paid service.",
+  "licensing": "Follows the project's existing licensing status; no new third-party sample license obligations.",
+  "render": "NumPy synthesis; PCM16 stereo at 32000Hz. Note tails and room reflections wrap across the exact 32-bar loop. Godot imports compress to QOA.",
+  "tracks": [
+    {
+      "id": "menu_theme",
+      "title": "Rollout Club",
+      "file": "assets/audio/music/menu_theme.wav",
+      "bpm": 104,
+      "bars": 32,
+      "seconds": 73.846156,
+      "frames": 2363077,
+      "sample_rate": 32000,
+      "channels": 2,
+      "bits": 16,
+      "loop": true,
+      "peak_dbfs": -1.514,
+      "rms_dbfs": -14.202,
+      "loop_boundary_jump": 0.006089,
+      "sha256": "b52b5a2ea427f5f3e2b68cae74028b34aac786cec09fb0a490d278bf75c5a992"
+    },
+    {
+      "id": "battle_theme",
+      "title": "Tin Track Rally",
+      "file": "assets/audio/music/battle_theme.wav",
+      "bpm": 128,
+      "bars": 32,
+      "seconds": 60.0,
+      "frames": 1920000,
+      "sample_rate": 32000,
+      "channels": 2,
+      "bits": 16,
+      "loop": true,
+      "peak_dbfs": -1.514,
+      "rms_dbfs": -12.298,
+      "loop_boundary_jump": 0.00272,
+      "sha256": "d7e67dab61581c2699bd6396772cdb8720bb8cb14c6c92b81d3c31d00486e5af"
+    }
+  ]
+}

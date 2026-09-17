@@ -1,0 +1,493 @@
+{
+  "name": "Pocket Armor - Toybox Audio v1",
+  "generator": "tools/build_audio.py",
+  "source_sha256": "8bf79c104f89b74a689ed52b49372431f612a53734fdd673554828cf77dbc6f6",
+  "provenance": "Original deterministic procedural synthesis. No recordings, third-party samples, AI service, or paid provider used.",
+  "usage": "Created for this project; no third-party sample attribution or sample license obligations.",
+  "specification": "Short, rounded low-poly toy-tank effects; readable phone-speaker transients, gentle menu percussion, no voice or realistic firearm recordings. Mono PCM16 44.1kHz. Peaks below -2.8dBFS. Seamless motor loop.",
+  "assets": [
+    {
+      "id": "cannon_00",
+      "file": "assets/audio/cannon_00.wav",
+      "description": "Azure Scout: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.548,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.01,
+      "loop": false,
+      "sha256": "4e2d0ee87b4244b0e5dc33e9627bdc3dddc9b124f2c8ccdc3dbcae62e1524cdf"
+    },
+    {
+      "id": "cannon_01",
+      "file": "assets/audio/cannon_01.wav",
+      "description": "Mint Cruiser: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.562,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -20.8,
+      "loop": false,
+      "sha256": "6409ca65f157ac5679ed0729b7cd382338bb44274b092c6651c4defaa18137b6"
+    },
+    {
+      "id": "cannon_02",
+      "file": "assets/audio/cannon_02.wav",
+      "description": "Red Bulldog: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.595,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -19.78,
+      "loop": false,
+      "sha256": "30b763547e75e772be4ed8d524280c36335d1b0ac55610ec7167a226301781ad"
+    },
+    {
+      "id": "cannon_03",
+      "file": "assets/audio/cannon_03.wav",
+      "description": "Gold Sprinter: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.535,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.68,
+      "loop": false,
+      "sha256": "4a5748bae388c2f14a1dd3494e79a3331ab0dee5202186771a9a81db93fd4ff0"
+    },
+    {
+      "id": "cannon_04",
+      "file": "assets/audio/cannon_04.wav",
+      "description": "Violet Needle: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.542,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.46,
+      "loop": false,
+      "sha256": "d7c396ff95ba467a52814365d8c9ce291e01dcc205d1a48dc01f7250deae9c5f"
+    },
+    {
+      "id": "cannon_05",
+      "file": "assets/audio/cannon_05.wav",
+      "description": "Ivory Duelist: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.552,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.11,
+      "loop": false,
+      "sha256": "9df2707d4f8dcd9a8549a6f4cb4f7de0366c5fd59bbeb4b87b061aeb50e3e74b"
+    },
+    {
+      "id": "cannon_06",
+      "file": "assets/audio/cannon_06.wav",
+      "description": "Orange Mortar: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.625,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -18.63,
+      "loop": false,
+      "sha256": "6fe28af554f9b9a1e2a97aaae7b8609d4b9125bffc0d8b7adfea19523d6545fa"
+    },
+    {
+      "id": "cannon_07",
+      "file": "assets/audio/cannon_07.wav",
+      "description": "Slate Command: layered air pop, shell thump and barrel rattle",
+      "seconds": 0.58,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -19.23,
+      "loop": false,
+      "sha256": "bcbd1dd2d1a38464d150580fdf31341baeb53508cb575586f1e2da2b860de7d6"
+    },
+    {
+      "id": "ricochet_00",
+      "file": "assets/audio/ricochet_00.wav",
+      "description": "Short spring-metal ping with a pitched glancing impact",
+      "seconds": 0.4,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -23.26,
+      "loop": false,
+      "sha256": "895c965e080919d683c00df2f20a4841991f6ffdb832c643293a0b07ca4bc630"
+    },
+    {
+      "id": "ricochet_01",
+      "file": "assets/audio/ricochet_01.wav",
+      "description": "Short spring-metal ping with a pitched glancing impact",
+      "seconds": 0.4,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -20.99,
+      "loop": false,
+      "sha256": "03d3ba46ba1a94addc465c6c027ef0715ae0ea437a3b2fa56f2d3b0aaf6880ce"
+    },
+    {
+      "id": "ricochet_02",
+      "file": "assets/audio/ricochet_02.wav",
+      "description": "Short spring-metal ping with a pitched glancing impact",
+      "seconds": 0.4,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -4.73,
+      "rms_dbfs": -21.44,
+      "loop": false,
+      "sha256": "0348e8b7076526a998b1c7eea1c5cda662652efd58a0638c242661b95d07574c"
+    },
+    {
+      "id": "explosion_00",
+      "file": "assets/audio/explosion_00.wav",
+      "description": "Rounded toy-tank burst with tumbling metal debris",
+      "seconds": 1.15,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.86,
+      "loop": false,
+      "sha256": "15da9bd9f096da8c5e63ba6d23ac743a36c851404c000641cfb05bb03d033410"
+    },
+    {
+      "id": "explosion_01",
+      "file": "assets/audio/explosion_01.wav",
+      "description": "Rounded toy-tank burst with tumbling metal debris",
+      "seconds": 1.15,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.74,
+      "loop": false,
+      "sha256": "0a6d79a6deeff61abe3348e11f419b57c41d1fc87f5510886b09300b3befbdf0"
+    },
+    {
+      "id": "explosion_02",
+      "file": "assets/audio/explosion_02.wav",
+      "description": "Rounded toy-tank burst with tumbling metal debris",
+      "seconds": 1.15,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.65,
+      "loop": false,
+      "sha256": "5d82ecdf75b55463bd53afdfa834b1c84f857542bf2eaae142a935562aea99a4"
+    },
+    {
+      "id": "mine_place",
+      "file": "assets/audio/mine_place.wav",
+      "description": "Mine drops with a hollow clunk and latch click",
+      "seconds": 0.32,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -4.44,
+      "rms_dbfs": -19.83,
+      "loop": false,
+      "sha256": "00c6c94913b51a9f57dccac103fb00254ec9165db49407d06bbdb48c379c8112"
+    },
+    {
+      "id": "mine_arm",
+      "file": "assets/audio/mine_arm.wav",
+      "description": "Small two-note armed indicator",
+      "seconds": 0.295,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -7.54,
+      "rms_dbfs": -21.07,
+      "loop": false,
+      "sha256": "5251b502688b8f38517ee50c91bbf3c78e7e43f49f03b16abe9cebab8044c5f2"
+    },
+    {
+      "id": "mine_burst",
+      "file": "assets/audio/mine_burst.wav",
+      "description": "Deeper ground-level mine burst",
+      "seconds": 1.3,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -2.85,
+      "rms_dbfs": -21.87,
+      "loop": false,
+      "sha256": "e7b95d00d7a9dbee7fd1c8053c541a56b4a0de65ec2af6504a493a5140e941a8"
+    },
+    {
+      "id": "reload_ready",
+      "file": "assets/audio/reload_ready.wav",
+      "description": "Quiet bolt closure when the player's cannon reloads",
+      "seconds": 0.19,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -8.4,
+      "rms_dbfs": -23.8,
+      "loop": false,
+      "sha256": "8b88c3e9ef3354a07b6d831bcdca552ece4be72072a557f21ed3346df8010761"
+    },
+    {
+      "id": "ui_hover",
+      "file": "assets/audio/ui_hover.wav",
+      "description": "Soft wooden menu tick",
+      "seconds": 0.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -10.46,
+      "rms_dbfs": -23.69,
+      "loop": false,
+      "sha256": "283de1118b4622bab201381e87d4a5be79643abb31321c8ccf2cc5d9c5c4d06d"
+    },
+    {
+      "id": "ui_confirm",
+      "file": "assets/audio/ui_confirm.wav",
+      "description": "Rounded rising confirmation",
+      "seconds": 0.33,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -6.38,
+      "rms_dbfs": -20.33,
+      "loop": false,
+      "sha256": "1837446d6c904e4ea8ce0165475add4e8d075c00a7968628c17560fc41adaa2a"
+    },
+    {
+      "id": "ui_back",
+      "file": "assets/audio/ui_back.wav",
+      "description": "Gentle descending back cue",
+      "seconds": 0.285,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -7.54,
+      "rms_dbfs": -21.36,
+      "loop": false,
+      "sha256": "be617d07a29807f44e8b4b03cdbf3e4840b83faeed0b233dee1671fa21768e65"
+    },
+    {
+      "id": "tank_select",
+      "file": "assets/audio/tank_select.wav",
+      "description": "Playful mechanical lock-in chord",
+      "seconds": 0.515,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -6.2,
+      "rms_dbfs": -20.05,
+      "loop": false,
+      "sha256": "65ebfab14702e57fdfa7e0fdb32c3c46dafba68601fd6fbff2b9f35d9cabb750"
+    },
+    {
+      "id": "pause",
+      "file": "assets/audio/pause.wav",
+      "description": "Soft pause cue",
+      "seconds": 0.37,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -7.96,
+      "rms_dbfs": -21.62,
+      "loop": false,
+      "sha256": "6d13b677e1dda74c731ff10793a73fb5a1da6a3a5673574411433706664cf3bf"
+    },
+    {
+      "id": "resume",
+      "file": "assets/audio/resume.wav",
+      "description": "Soft resume cue",
+      "seconds": 0.37,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -7.96,
+      "rms_dbfs": -21.32,
+      "loop": false,
+      "sha256": "89d882962232b6f7b5bc2df3d331858283d221f899a746e37cbf6a4151d24c6a"
+    },
+    {
+      "id": "match_start",
+      "file": "assets/audio/match_start.wav",
+      "description": "Four-note Pocket Armor launch motif",
+      "seconds": 1.145,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -5.35,
+      "rms_dbfs": -18.88,
+      "loop": false,
+      "sha256": "005a761a0a913fa24c4b9bd1fdbe3abad0acb070e8f3bde827b16556ec14c845"
+    },
+    {
+      "id": "victory",
+      "file": "assets/audio/victory.wav",
+      "description": "Bright toybox victory fanfare",
+      "seconds": 1.95,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -4.58,
+      "rms_dbfs": -18.17,
+      "loop": false,
+      "sha256": "799320fdf3a0836f8561efb976b0bcc6c85cdd1fa1060e02dd6165537610ca84"
+    },
+    {
+      "id": "defeat",
+      "file": "assets/audio/defeat.wav",
+      "description": "Warm, short descending round-end phrase",
+      "seconds": 1.67,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -5.68,
+      "rms_dbfs": -18.68,
+      "loop": false,
+      "sha256": "722875cb5b367ddfa7e3eba0d26a733f95b5f8252067b6c5153e4c7adb2f873d"
+    },
+    {
+      "id": "player_down",
+      "file": "assets/audio/player_down.wav",
+      "description": "Brief lower cue entering spectator mode",
+      "seconds": 0.81,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -7.96,
+      "rms_dbfs": -21.02,
+      "loop": false,
+      "sha256": "756b6be6163b89b3aaa29e9c45e331174582e6df7fec383ef270517aa4cefee4"
+    },
+    {
+      "id": "treads_loop",
+      "file": "assets/audio/treads_loop.wav",
+      "description": "Seamless little motor with lightly rattling caterpillar tracks",
+      "seconds": 2.0,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bits": 16,
+      "peak_dbfs": -6.02,
+      "rms_dbfs": -10.4,
+      "loop": true,
+      "sha256": "953cf81d76d320ca1e994f92a87ecefc632ca3853d9ad7ee8ce00b5ca6bc6744"
+    }
+  ],
+  "reel_timeline": [
+    {
+      "seconds": 0.2,
+      "id": "ui_hover"
+    },
+    {
+      "seconds": 0.55,
+      "id": "ui_hover"
+    },
+    {
+      "seconds": 0.95,
+      "id": "ui_confirm"
+    },
+    {
+      "seconds": 1.6,
+      "id": "tank_select"
+    },
+    {
+      "seconds": 2.5,
+      "id": "match_start"
+    },
+    {
+      "seconds": 4.0,
+      "id": "cannon_00"
+    },
+    {
+      "seconds": 4.72,
+      "id": "cannon_01"
+    },
+    {
+      "seconds": 5.4399999999999995,
+      "id": "cannon_02"
+    },
+    {
+      "seconds": 6.16,
+      "id": "cannon_03"
+    },
+    {
+      "seconds": 6.88,
+      "id": "cannon_04"
+    },
+    {
+      "seconds": 7.6,
+      "id": "cannon_05"
+    },
+    {
+      "seconds": 8.32,
+      "id": "cannon_06"
+    },
+    {
+      "seconds": 9.04,
+      "id": "cannon_07"
+    },
+    {
+      "seconds": 10.0,
+      "id": "ricochet_00"
+    },
+    {
+      "seconds": 10.6,
+      "id": "ricochet_01"
+    },
+    {
+      "seconds": 11.2,
+      "id": "ricochet_02"
+    },
+    {
+      "seconds": 12.0,
+      "id": "mine_place"
+    },
+    {
+      "seconds": 13.1,
+      "id": "mine_arm"
+    },
+    {
+      "seconds": 13.9,
+      "id": "mine_burst"
+    },
+    {
+      "seconds": 15.5,
+      "id": "cannon_00"
+    },
+    {
+      "seconds": 16.2,
+      "id": "reload_ready"
+    },
+    {
+      "seconds": 17.0,
+      "id": "explosion_00"
+    },
+    {
+      "seconds": 18.4,
+      "id": "pause"
+    },
+    {
+      "seconds": 19.0,
+      "id": "resume"
+    },
+    {
+      "seconds": 19.8,
+      "id": "victory"
+    },
+    {
+      "seconds": 23.0,
+      "id": "defeat"
+    }
+  ]
+}
